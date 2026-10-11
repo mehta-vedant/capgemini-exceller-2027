@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A focused practice dashboard for Capgemini 2027 assessment preparation." />
+  <title>Capgemini Practice HQ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="#home"><span class="brand-mark">C</span><span>practice<span class="accent">hq</span></span></a><nav><a href="#roadmap">Roadmap</a><a href="#practice">Practice</a><a href="#library">Library</a></nav><button class="text-button" id="resetProgress">Reset progress</button></header>
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy"><p class="eyebrow"><span></span> CAPGEMINI 2027 · PRACTICE SPACE</p><h1>Practice with<br><em>purpose.</em></h1><p class="lede">A calm, structured launchpad for the assessment, debugging, AI-assisted coding, and interview conversations ahead.</p><div class="hero-actions"><a class="button primary" href="#practice">Start a quick drill <b>→</b></a><a class="button ghost" href="#roadmap">See your roadmap</a></div><p class="disclaimer">Practice material only — designed for understanding, not memorising leaked questions.</p></div>
+      <aside class="today-card"><div class="card-top"><span>YOUR NEXT SESSION</span><span class="pulse">READY</span></div><div class="session-number">01</div><h2>AI foundations</h2><p>Build confidence with the concepts behind the questions.</p><div class="session-meta"><span>10 questions</span><span>~ 12 min</span></div><button class="wide-button" data-jump="practice">Begin session <b>→</b></button></aside>
+    </section>
+    <section class="signal-band"><div><strong>130+</strong><span>practice items</span></div><div><strong>6</strong><span>skill chapters</span></div><div><strong>4</strong><span>core assessment modes</span></div><p>THE GOAL: EXPLAIN YOUR REASONING, NOT JUST PICK THE RIGHT OPTION.</p></section>
+    <section class="section roadmap" id="roadmap"><div class="section-heading"><p class="eyebrow">YOUR PREP ROADMAP</p><h2>One pathway. Six useful stops.</h2><p>Move in sequence or choose the skill you need most today. Your completed modules stay saved on this device.</p></div><div class="roadmap-grid" id="roadmapGrid"></div></section>
+    <section class="section practice-section" id="practice"><div class="practice-intro"><p class="eyebrow">QUICK DRILL</p><h2>Make the next<br>12 minutes count.</h2><p>Answer six mixed questions. Immediate feedback helps you learn the reasoning behind each answer.</p><div class="timer"><span>SESSION TIMER</span><strong id="timer">12:00</strong></div></div><div class="quiz-card" id="quizCard"><div class="quiz-progress"><span id="questionCount">QUESTION 1 OF 6</span><div><i id="progressBar"></i></div></div><p class="quiz-topic" id="quizTopic">AI LITERACY</p><h3 id="questionText">Loading your first question…</h3><div class="answers" id="answers"></div><div class="quiz-footer"><span id="quizFeedback" aria-live="polite">Choose an answer to continue.</span><button class="next-button" id="nextQuestion" disabled>Next <b>→</b></button></div></div></section>
+    <section class="section library" id="library"><div class="section-heading"><p class="eyebrow">THE FULL LIBRARY</p><h2>Go deeper when you’re ready.</h2><p>Each original chapter remains available as a detailed study guide, with worked explanations, code, and reusable templates.</p></div><div class="library-layout"><div class="resource-list" id="resourceList"></div><aside class="method-card"><p class="eyebrow">THE DEBUGGING LOOP</p><img src="../images/debugging-flow.svg" alt="Review, identify, fix and validate debugging flow" /><ol><li>Read the entire problem first.</li><li>Name the bug before changing code.</li><li>Make the smallest correct fix.</li><li>Trace a normal case and edge case.</li></ol></aside></div></section>
+    <section class="closing"><p class="eyebrow">KEEP IT HUMAN-LED</p><h2>Use AI to sharpen<br>your thinking.</h2><p>Great prompts, careful review, and a clear explanation of your decisions are skills you can practise — starting now.</p><a class="button primary" href="sections/04-ai-assisted-coding.md">Open prompt toolkit <b>→</b></a></section>
+  </main>
+  <footer><a class="brand" href="#home"><span class="brand-mark">C</span><span>practice<span class="accent">hq</span></span></a><span>Built from the Capgemini 2027 practice book.</span><a href="https://github.com/santhoshkumaroff/Capgemini-2027" target="_blank" rel="noreferrer">View source ↗</a></footer>
+  <script src="app.js"></script>
+</body>
+</html>
