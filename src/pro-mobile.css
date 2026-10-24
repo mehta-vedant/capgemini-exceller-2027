@@ -1,0 +1,4 @@
+@media(max-width:850px){
+  header{height:auto;min-height:64px;flex-wrap:wrap;padding-top:12px}
+  header nav{display:flex;order:3;flex-basis:100%;padding-bottom:10px}
+}

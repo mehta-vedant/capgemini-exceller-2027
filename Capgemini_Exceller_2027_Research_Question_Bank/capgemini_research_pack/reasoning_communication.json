@@ -1,0 +1,182 @@
+[
+  {
+    "id": "EX-001",
+    "module": "logical",
+    "prompt": "All architects are engineers. Some engineers are writers. Must some architects be writers?",
+    "answer": "No",
+    "explanation": "The overlap between architects and writers is not guaranteed.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false
+  },
+  {
+    "id": "EX-002",
+    "module": "logical",
+    "prompt": "All A are B. All B are C. Must all A be C?",
+    "answer": "Yes",
+    "explanation": "Subset inclusion is transitive.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false
+  },
+  {
+    "id": "EX-003",
+    "module": "logical",
+    "prompt": "No poets are accountants. Some accountants are cyclists. Must some cyclists not be poets?",
+    "answer": "Yes",
+    "explanation": "Those cyclists who are accountants cannot be poets.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false
+  },
+  {
+    "id": "EX-004",
+    "module": "logical",
+    "prompt": "Some servers are virtual machines. All virtual machines use memory. Must some servers use memory?",
+    "answer": "Yes",
+    "explanation": "The shared server/VM elements have memory.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false
+  },
+  {
+    "id": "EX-005",
+    "module": "logical",
+    "prompt": "All testers are employees. No employees are contractors. Can any tester be a contractor?",
+    "answer": "No",
+    "explanation": "All testers belong to employees, which is disjoint from contractors.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false
+  },
+  {
+    "id": "EX-006",
+    "module": "logical",
+    "prompt": "Some students are athletes. No athletes are smokers. Must some students not be smokers?",
+    "answer": "Yes",
+    "explanation": "Student-athletes are non-smokers by the premise.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false
+  },
+  {
+    "id": "EX-007",
+    "module": "logical",
+    "prompt": "Some A are B. All B are C. Must some A be C?",
+    "answer": "Yes",
+    "explanation": "The intersection A and B lies inside C.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false
+  },
+  {
+    "id": "EX-008",
+    "module": "logical",
+    "prompt": "All red boxes are heavy. Some heavy boxes are small. Are any red boxes necessarily small?",
+    "answer": "No",
+    "explanation": "Both subsets of heavy items need not overlap.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false
+  },
+  {
+    "id": "EX-009",
+    "module": "logical",
+    "prompt": "No laptops are phones. Some phones are tablets. Are some tablets definitely not laptops?",
+    "answer": "Yes",
+    "explanation": "The tablet-phone intersection cannot contain laptops.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false
+  },
+  {
+    "id": "EX-010",
+    "module": "logical",
+    "prompt": "All green birds fly. Some flying creatures swim. Must some green birds swim?",
+    "answer": "No",
+    "explanation": "Shared property flying does not imply intersecting groups.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false
+  },
+  {
+    "id": "EX-011",
+    "module": "communication",
+    "prompt": "Choose the correct sentence: She have submitted the report / She has submitted the report",
+    "answer": "She has submitted the report",
+    "explanation": "Third-person singular subject takes has in present perfect.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false
+  },
+  {
+    "id": "EX-012",
+    "module": "communication",
+    "prompt": "Choose the correct preposition: responsible of / responsible for",
+    "answer": "responsible for",
+    "explanation": "Responsible is conventionally followed by for when stating duties.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false
+  },
+  {
+    "id": "EX-013",
+    "module": "communication",
+    "prompt": "Choose the correct agreement: Neither the manager nor the analysts is available / Neither the manager nor the analysts are available",
+    "answer": "Neither the manager nor the analysts are available",
+    "explanation": "With neither/nor, the plural nearer subject analysts takes are in this construction.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false
+  },
+  {
+    "id": "EX-014",
+    "module": "communication",
+    "prompt": "Choose the natural professional phrasing: Kindly do the needful ASAP / Please review the attached document by 5 PM",
+    "answer": "Please review the attached document by 5 PM",
+    "explanation": "Specific action and deadline improve professional clarity.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false
+  },
+  {
+    "id": "EX-015",
+    "module": "communication",
+    "prompt": "Choose the correct phrase: fewer errors / less errors",
+    "answer": "fewer errors",
+    "explanation": "Errors are countable items.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false
+  },
+  {
+    "id": "EX-016",
+    "module": "communication",
+    "prompt": "Choose the correct conditional: If I had known, I would have called / If I knew, I would have called yesterday",
+    "answer": "If I had known, I would have called",
+    "explanation": "Past unreal conditional uses past perfect in the condition.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false
+  },
+  {
+    "id": "EX-017",
+    "module": "communication",
+    "prompt": "Choose the correct usage: The data is consistent / The data are consistent",
+    "answer": "The data are consistent",
+    "explanation": "Formal technical writing often treats data as plural; singular data is also accepted in many contemporary styles.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false
+  },
+  {
+    "id": "EX-018",
+    "module": "communication",
+    "prompt": "Choose the better issue-report sentence: It is not working / The upload fails with HTTP 413 for files above 10 MB",
+    "answer": "The upload fails with HTTP 413 for files above 10 MB",
+    "explanation": "Observed behavior and conditions are actionable.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false
+  },
+  {
+    "id": "EX-019",
+    "module": "communication",
+    "prompt": "Choose the more appropriate subject line: Hi / Request for clarification on assessment schedule",
+    "answer": "Request for clarification on assessment schedule",
+    "explanation": "A concise specific subject improves professional communication.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false
+  },
+  {
+    "id": "EX-020",
+    "module": "communication",
+    "prompt": "Choose the grammatical phrase: each of the students has / each of the students have",
+    "answer": "each of the students has",
+    "explanation": "Each is a singular distributive subject.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false
+  }
+]

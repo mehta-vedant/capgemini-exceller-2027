@@ -1,0 +1,122 @@
+[
+  {
+    "id": "AIC-01",
+    "title": "Three category replacements",
+    "inspired_by": [
+      "R01"
+    ],
+    "provenance": "original_practice_inspired_by_candidate_report",
+    "task": "Find minimum edits to equalize categories 1/2/3 in an array up to n=1e5.",
+    "expected_prompt_elements": "Frequency counting, n-max_count, complexity O(n), input/output contract",
+    "evaluation_checks": [
+      "all identical",
+      "all distinct",
+      "largest size"
+    ]
+  },
+  {
+    "id": "AIC-02",
+    "title": "Clockwise dial movement",
+    "inspired_by": [
+      "R02"
+    ],
+    "provenance": "original_practice_inspired_by_candidate_report",
+    "task": "Numbers 1..n are arranged clockwise. Starting at 1, visit requested numbers minimizing total clockwise steps.",
+    "expected_prompt_elements": "Modular distance, update current, long long accumulation",
+    "evaluation_checks": [
+      "wraparound",
+      "repeated target",
+      "large sequence"
+    ]
+  },
+  {
+    "id": "AIC-03",
+    "title": "Cross-browser flaky test",
+    "inspired_by": [
+      "R04"
+    ],
+    "provenance": "original_practice_inspired_by_candidate_report",
+    "task": "Given a failing browser test, instruct an AI to isolate selector instability and timing assumptions without disabling assertions.",
+    "expected_prompt_elements": "Reproduce, target browser, condition waits, stable selectors, evidence-based patch",
+    "evaluation_checks": [
+      "race condition",
+      "different browser",
+      "assertions retained"
+    ]
+  },
+  {
+    "id": "AIC-04",
+    "title": "SQL dashboard slowness",
+    "inspired_by": [
+      "R01"
+    ],
+    "provenance": "original_practice_inspired_by_candidate_report",
+    "task": "Given orders and customer tables, ask AI for corrected query and index suggestions after inspecting EXPLAIN.",
+    "expected_prompt_elements": "Schema, workload, join grain, query plan, trade-offs",
+    "evaluation_checks": [
+      "duplicate aggregation",
+      "index selectivity",
+      "EXPLAIN reasoning"
+    ]
+  },
+  {
+    "id": "AIC-05",
+    "title": "Movie awards feature",
+    "inspired_by": [
+      "R05"
+    ],
+    "provenance": "original_practice_inspired_by_candidate_report",
+    "task": "A movie app renders hardcoded awards. Prompt an AI partner to trace API, model, service and UI and implement real-data awards display.",
+    "expected_prompt_elements": "Repository navigation, read current architecture, data contract, API, loading/error/empty states, tests",
+    "evaluation_checks": [
+      "real API data",
+      "safe failure",
+      "no mocked production data"
+    ]
+  },
+  {
+    "id": "AIC-06",
+    "title": "Music delete feature bug",
+    "inspired_by": [
+      "R05"
+    ],
+    "provenance": "original_practice_inspired_by_candidate_report",
+    "task": "Track deletion fails in a music app. Guide AI to trace UI event, request, route handler, authorization and persistence.",
+    "expected_prompt_elements": "Repro, trace network and logs, access controls, minimal fix, regression test",
+    "evaluation_checks": [
+      "correct authorization",
+      "UI updates",
+      "failed request handled"
+    ]
+  },
+  {
+    "id": "AIC-07",
+    "title": "Minimum strokes on character grid",
+    "inspired_by": [
+      "R05"
+    ],
+    "provenance": "original_practice_inspired_by_candidate_report",
+    "task": "Given colored cell grid and 4-direction movement, formulate a precise specification and solve minimum strokes when each stroke paints a connected region of one color.",
+    "expected_prompt_elements": "Explicit interpretation, 4-direction connected components, O(nm), BFS/DFS",
+    "evaluation_checks": [
+      "single color",
+      "disconnected same color",
+      "boundary traversal"
+    ]
+  },
+  {
+    "id": "AIC-08",
+    "title": "Safe migration",
+    "inspired_by": [
+      "R04"
+    ],
+    "provenance": "original_practice_inspired_by_candidate_report",
+    "task": "A generated migration breaks old service deployments. Guide AI through backward-compatible migration and rollout validation.",
+    "expected_prompt_elements": "expand-migrate-contract, backwards compatibility, rollback strategy",
+    "evaluation_checks": [
+      "old version compatibility",
+      "zero downtime",
+      "rollback"
+    ]
+  }
+]

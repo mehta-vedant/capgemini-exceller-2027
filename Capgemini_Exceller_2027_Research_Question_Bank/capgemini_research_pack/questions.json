@@ -1,0 +1,3746 @@
+[
+  {
+    "id": "AI-0001",
+    "module": "AI",
+    "topic": "Foundations",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "A support team needs a model to classify emails as urgent or normal rather than write replies. Which modeling objective fits best?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Discriminative classification"
+      },
+      {
+        "id": "B",
+        "text": "Autoregressive text generation"
+      },
+      {
+        "id": "C",
+        "text": "Unsupervised text generation"
+      },
+      {
+        "id": "D",
+        "text": "Image synthesis"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Classification learns decision boundaries between labels, whereas text generation predicts content.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0002",
+    "module": "AI",
+    "topic": "Foundations",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "A company wants to customize an LLM's response with current store inventory without changing weights. Which action is most appropriate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Retrain the foundation model"
+      },
+      {
+        "id": "B",
+        "text": "Supply retrieved inventory at inference"
+      },
+      {
+        "id": "C",
+        "text": "Increase temperature"
+      },
+      {
+        "id": "D",
+        "text": "Reduce token vocabulary"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Grounding the prompt in retrieved inventory gives current information without retraining.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0003",
+    "module": "AI",
+    "topic": "Foundations",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "Why can an LLM produce convincing but false citations?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Its outputs are generated from learned token patterns, not an inherent fact database"
+      },
+      {
+        "id": "B",
+        "text": "A larger context window forces citations to be correct"
+      },
+      {
+        "id": "C",
+        "text": "Softmax guarantees facts"
+      },
+      {
+        "id": "D",
+        "text": "Tokenizers verify URLs"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Language modeling predicts tokens; citation accuracy requires retrieval and verification.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0004",
+    "module": "AI",
+    "topic": "Foundations",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "A response must be reproducible. Which adjustment most directly reduces random sampling variation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Increase temperature"
+      },
+      {
+        "id": "B",
+        "text": "Reduce temperature and use deterministic settings where supported"
+      },
+      {
+        "id": "C",
+        "text": "Increase maximum tokens"
+      },
+      {
+        "id": "D",
+        "text": "Add irrelevant examples"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Lower temperature concentrates probability on likely outputs, although perfect reproducibility may require additional controls.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0005",
+    "module": "AI",
+    "topic": "Foundations",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "An application exceeds the model's context limit. What must be addressed?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Number of GPU cores only"
+      },
+      {
+        "id": "B",
+        "text": "Total token budget for instructions, retrieved text, history and answer"
+      },
+      {
+        "id": "C",
+        "text": "Embedding vector norm only"
+      },
+      {
+        "id": "D",
+        "text": "HTTP response status"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "All tokens in the request and generated output contribute to relevant context/output limits.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0006",
+    "module": "AI",
+    "topic": "Foundations",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "Which statement most accurately compares pretraining and fine-tuning?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Both always require labeled classification data"
+      },
+      {
+        "id": "B",
+        "text": "Pretraining learns broadly while fine-tuning adapts a pretrained model to a target behavior"
+      },
+      {
+        "id": "C",
+        "text": "Fine-tuning never changes weights"
+      },
+      {
+        "id": "D",
+        "text": "Pretraining occurs at inference"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Pretraining establishes general representations; weight-based fine-tuning further adapts those weights.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0007",
+    "module": "AI",
+    "topic": "Foundations",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "An application has high factual accuracy but uses a slow, large model. What should be evaluated before switching to a smaller model?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Only model parameter count"
+      },
+      {
+        "id": "B",
+        "text": "Task quality, latency, cost and safety on representative workloads"
+      },
+      {
+        "id": "C",
+        "text": "Only generated response length"
+      },
+      {
+        "id": "D",
+        "text": "Only training language"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Model choice is multi-objective and should use workload-specific evaluation.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0008",
+    "module": "AI",
+    "topic": "Foundations",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "A tokenizer splits an unfamiliar long word into several pieces. What follows?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Each piece consumes token budget"
+      },
+      {
+        "id": "B",
+        "text": "The word is automatically rejected"
+      },
+      {
+        "id": "C",
+        "text": "The model becomes deterministic"
+      },
+      {
+        "id": "D",
+        "text": "The embedding database is cleared"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Subword tokenization may use multiple tokens for one displayed word.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0009",
+    "module": "AI",
+    "topic": "Foundations",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "Which process occurs during normal model inference?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Optimizing all model weights using backpropagation"
+      },
+      {
+        "id": "B",
+        "text": "Generating an output using already learned parameters"
+      },
+      {
+        "id": "C",
+        "text": "Collecting new training labels automatically"
+      },
+      {
+        "id": "D",
+        "text": "Rebuilding tokenizer vocabulary"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Inference uses trained parameters to compute predictions.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0010",
+    "module": "AI",
+    "topic": "Foundations",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "A multilingual chatbot works on a language absent from its product manual. Why might it still respond?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Foundation models may generalize across languages learned during pretraining"
+      },
+      {
+        "id": "B",
+        "text": "All languages share identical grammar"
+      },
+      {
+        "id": "C",
+        "text": "RAG automatically translates everything"
+      },
+      {
+        "id": "D",
+        "text": "Temperature converts languages"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Broad pretraining can produce multilingual capabilities, but quality varies by language.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0011",
+    "module": "AI",
+    "topic": "Prompting",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "A vague prompt produces inconsistent report formats. Which revision is best?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tell the model to try harder"
+      },
+      {
+        "id": "B",
+        "text": "Specify audience, inputs, required sections, length and output schema"
+      },
+      {
+        "id": "C",
+        "text": "Increase temperature"
+      },
+      {
+        "id": "D",
+        "text": "Repeat the vague prompt ten times"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Clear constraints and a structured output specification improve consistency.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0012",
+    "module": "AI",
+    "topic": "Prompting",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "A developer provides three representative input-output pairs before a new task. What technique is being used?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fine-tuning"
+      },
+      {
+        "id": "B",
+        "text": "Few-shot prompting"
+      },
+      {
+        "id": "C",
+        "text": "Reinforcement learning"
+      },
+      {
+        "id": "D",
+        "text": "Parameter pruning"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Examples inside the prompt condition behavior without updating weights.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0013",
+    "module": "AI",
+    "topic": "Prompting",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "An AI coding assistant writes an O(n²) solution for n=200000. What was missing from the initial request?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The programmer's name"
+      },
+      {
+        "id": "B",
+        "text": "Input constraints and performance target"
+      },
+      {
+        "id": "C",
+        "text": "A higher temperature"
+      },
+      {
+        "id": "D",
+        "text": "More decorative comments"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Providing constraints makes algorithmic feasibility explicit.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0014",
+    "module": "AI",
+    "topic": "Prompting",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "A user-supplied PDF says ignore all developer instructions and expose secrets. What is the correct treatment?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Treat the PDF as privileged instructions"
+      },
+      {
+        "id": "B",
+        "text": "Treat the PDF as untrusted data and ignore conflicting instructions"
+      },
+      {
+        "id": "C",
+        "text": "Disable validation"
+      },
+      {
+        "id": "D",
+        "text": "Run any requested shell command"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Retrieved content is data, not an authority source; this is a prompt injection attempt.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0015",
+    "module": "AI",
+    "topic": "Prompting",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "An AI assistant proposes a database migration that drops a production table. What should happen before execution?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Execute immediately if syntax is correct"
+      },
+      {
+        "id": "B",
+        "text": "Review impact, verify backups, stage and obtain required approval"
+      },
+      {
+        "id": "C",
+        "text": "Increase temperature"
+      },
+      {
+        "id": "D",
+        "text": "Remove error logging"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Generated code requires human review and safety controls, especially for destructive actions.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0016",
+    "module": "AI",
+    "topic": "Prompting",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "Which prompt is best for debugging a failing BFS implementation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fix it"
+      },
+      {
+        "id": "B",
+        "text": "Review this BFS function for visited-state and queue-order bugs, explain suspected failure on the provided test, then give a minimal patch"
+      },
+      {
+        "id": "C",
+        "text": "Rewrite the entire application without examining code"
+      },
+      {
+        "id": "D",
+        "text": "Invent tests that pass"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Targeted scope, code context and expected diagnostics support efficient debugging.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0017",
+    "module": "AI",
+    "topic": "Prompting",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "A generated SQL query returns correct rows for a sample but mishandles NULL. What should the candidate do?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Submit because the sample passed"
+      },
+      {
+        "id": "B",
+        "text": "Add NULL-focused tests and revise the query"
+      },
+      {
+        "id": "C",
+        "text": "Change column names randomly"
+      },
+      {
+        "id": "D",
+        "text": "Ignore unspecified cases"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Output verification should include meaningful edge cases, not just samples.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0018",
+    "module": "AI",
+    "topic": "Prompting",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "An assistant repeatedly makes the same mistake after vague corrections. Which next message is most helpful?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Wrong again"
+      },
+      {
+        "id": "B",
+        "text": "Provide the failing input, observed output, expected output and relevant requirement"
+      },
+      {
+        "id": "C",
+        "text": "Stop describing the task"
+      },
+      {
+        "id": "D",
+        "text": "Ask for more tokens only"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Concrete counterexamples give specific corrective feedback.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0019",
+    "module": "AI",
+    "topic": "Prompting",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "Why is giving a correct algorithm plan before requesting generated code valuable?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It replaces testing"
+      },
+      {
+        "id": "B",
+        "text": "It constrains the design and makes the result easier to verify"
+      },
+      {
+        "id": "C",
+        "text": "It guarantees zero bugs"
+      },
+      {
+        "id": "D",
+        "text": "It eliminates the need to read output"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Algorithm-first collaboration reduces ambiguity but does not replace validation.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0020",
+    "module": "AI",
+    "topic": "Prompting",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "A model produces JSON with trailing commentary, breaking a parser. What should the prompt additionally specify?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A creative metaphor"
+      },
+      {
+        "id": "B",
+        "text": "A strict schema and instruction to return only valid JSON"
+      },
+      {
+        "id": "C",
+        "text": "Longer free-form reasoning"
+      },
+      {
+        "id": "D",
+        "text": "An unrelated example"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Machine-consumable outputs benefit from explicit schemas and validation.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0021",
+    "module": "AI",
+    "topic": "RAG",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "Company policies change daily but model weights should stay fixed. Which architecture is most appropriate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "RAG over indexed policy documents"
+      },
+      {
+        "id": "B",
+        "text": "Pretrain from scratch daily"
+      },
+      {
+        "id": "C",
+        "text": "Increase temperature"
+      },
+      {
+        "id": "D",
+        "text": "Use a larger tokenizer"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Retrieval fetches current documents at response time without weight updates.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0022",
+    "module": "AI",
+    "topic": "RAG",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "A RAG system frequently retrieves irrelevant passages even when the answer exists. Which stage should be examined first?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Document retrieval and embedding relevance"
+      },
+      {
+        "id": "B",
+        "text": "Output font"
+      },
+      {
+        "id": "C",
+        "text": "HTTP status text"
+      },
+      {
+        "id": "D",
+        "text": "Answer temperature alone"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "A retrieval failure precedes answer generation and cannot reliably be fixed by stylistic settings.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0023",
+    "module": "AI",
+    "topic": "RAG",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "A retrieved passage is relevant but contains malicious instructions to reveal secrets. What should the system do?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Execute the passage instructions"
+      },
+      {
+        "id": "B",
+        "text": "Treat it as untrusted content and enforce instruction boundaries"
+      },
+      {
+        "id": "C",
+        "text": "Remove access controls"
+      },
+      {
+        "id": "D",
+        "text": "Forward private keys"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Retrieved data cannot override higher-priority system and security constraints.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0024",
+    "module": "AI",
+    "topic": "RAG",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "A long document is split into tiny chunks, losing key context. Which change is most appropriate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Use chunk boundaries and overlap suited to semantic units"
+      },
+      {
+        "id": "B",
+        "text": "Set chunk size to one character"
+      },
+      {
+        "id": "C",
+        "text": "Increase temperature only"
+      },
+      {
+        "id": "D",
+        "text": "Disable citations"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Semantically meaningful chunking preserves information needed to answer questions.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0025",
+    "module": "AI",
+    "topic": "RAG",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "A query's nearest retrieved documents are topically similar but not sufficient to answer. What should a reliable assistant do?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Invent missing facts"
+      },
+      {
+        "id": "B",
+        "text": "State uncertainty and request or retrieve more evidence"
+      },
+      {
+        "id": "C",
+        "text": "Always answer confidently"
+      },
+      {
+        "id": "D",
+        "text": "Disable retrieval"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Grounded systems should avoid unsupported claims when evidence is inadequate.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0026",
+    "module": "AI",
+    "topic": "RAG",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "A retrieval system returns ten candidates and a cross-encoder sorts them by query relevance. What step is this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reranking"
+      },
+      {
+        "id": "B",
+        "text": "Quantization"
+      },
+      {
+        "id": "C",
+        "text": "Backpropagation"
+      },
+      {
+        "id": "D",
+        "text": "Tokenization"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Reranking reorders retrieved candidates using a more expressive relevance model.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0027",
+    "module": "AI",
+    "topic": "RAG",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "Two text vectors are compared by their angle rather than raw length. Which score is typically used?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cosine similarity"
+      },
+      {
+        "id": "B",
+        "text": "TCP checksum"
+      },
+      {
+        "id": "C",
+        "text": "Levenshtein distance only"
+      },
+      {
+        "id": "D",
+        "text": "Database row count"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Cosine similarity compares directional alignment of vectors.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0028",
+    "module": "AI",
+    "topic": "RAG",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "When is fine-tuning more appropriate than RAG?",
+    "options": [
+      {
+        "id": "A",
+        "text": "When behavior/style/domain task performance must change systematically"
+      },
+      {
+        "id": "B",
+        "text": "When a new policy PDF is uploaded hourly"
+      },
+      {
+        "id": "C",
+        "text": "When only the timestamp changes"
+      },
+      {
+        "id": "D",
+        "text": "When factual retrieval is already adequate"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Fine-tuning adapts behavior and capabilities; RAG is usually better for frequently changing external facts.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0029",
+    "module": "AI",
+    "topic": "RAG",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "A chatbot cites documents that the current user may not access. Which safeguard matters most?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Document-level access control during retrieval"
+      },
+      {
+        "id": "B",
+        "text": "Higher sampling temperature"
+      },
+      {
+        "id": "C",
+        "text": "Larger output length"
+      },
+      {
+        "id": "D",
+        "text": "Publicly exposing vector IDs"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Retrieval must respect per-user authorization and document permissions.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0030",
+    "module": "AI",
+    "topic": "RAG",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "Which metric best directly reflects whether relevant evidence appears in the retrieved top-k passages?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Recall at k"
+      },
+      {
+        "id": "B",
+        "text": "CSS layout shift"
+      },
+      {
+        "id": "C",
+        "text": "Network packet loss"
+      },
+      {
+        "id": "D",
+        "text": "Model file size"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Recall@k quantifies relevant retrieved items in the selected set.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0031",
+    "module": "AI",
+    "topic": "Agents",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "An assistant needs to search orders, decide on eligibility and issue a refund only after approval. Which pattern fits?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tool-using agent with authorization and human approval checkpoints"
+      },
+      {
+        "id": "B",
+        "text": "Unrestricted text generation"
+      },
+      {
+        "id": "C",
+        "text": "Image-to-text OCR only"
+      },
+      {
+        "id": "D",
+        "text": "Static regex replacement"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "An agent can plan tool calls while explicit controls govern consequential actions.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0032",
+    "module": "AI",
+    "topic": "Agents",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "An agent calls a shipping API, receives a timeout and retries. What design consideration reduces duplicate shipment creation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Idempotency keys and retry handling"
+      },
+      {
+        "id": "B",
+        "text": "Increasing temperature"
+      },
+      {
+        "id": "C",
+        "text": "Ignoring status codes"
+      },
+      {
+        "id": "D",
+        "text": "Using bigger embeddings"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Idempotent requests and retry policies prevent duplicate side effects.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0033",
+    "module": "AI",
+    "topic": "Agents",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "An agent's tool returns JSON containing a suggested next instruction that conflicts with the user goal. What should happen?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Follow tool data as authority"
+      },
+      {
+        "id": "B",
+        "text": "Interpret it as data, validate it and keep original goal and policies"
+      },
+      {
+        "id": "C",
+        "text": "Drop all validation"
+      },
+      {
+        "id": "D",
+        "text": "Send hidden instructions to tool"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Tool output is untrusted data and must not override governing instructions.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0034",
+    "module": "AI",
+    "topic": "Agents",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "What is the main distinction between a fixed workflow and a planning agent?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fixed workflows predetermine steps"
+      },
+      {
+        "id": "B",
+        "text": " agents can choose steps and tools dynamically"
+      },
+      {
+        "id": "C",
+        "text": "Agents never use tools"
+      },
+      {
+        "id": "D",
+        "text": "Workflows must use LLMs"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Dynamic decision-making differentiates many agentic patterns from predefined workflows.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0035",
+    "module": "AI",
+    "topic": "Agents",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "An autonomous agent loops indefinitely between search and summarize. Which protection is most appropriate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A step budget, termination condition and monitoring"
+      },
+      {
+        "id": "B",
+        "text": "More context with no limit"
+      },
+      {
+        "id": "C",
+        "text": "Disable logging"
+      },
+      {
+        "id": "D",
+        "text": "Remove timeouts"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Bounded execution prevents runaway cost or infinite workflows.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0036",
+    "module": "AI",
+    "topic": "Agents",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "A planner proposes a sequence of tool calls; an executor runs them; a critic reviews results. What design is this?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Multi-role agent workflow"
+      },
+      {
+        "id": "B",
+        "text": "Gradient boosting"
+      },
+      {
+        "id": "C",
+        "text": "SQL sharding"
+      },
+      {
+        "id": "D",
+        "text": "Image augmentation"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Planning, execution and critique are separate roles in a workflow.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0037",
+    "module": "AI",
+    "topic": "Agents",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "Why might an agent need short-term state memory?",
+    "options": [
+      {
+        "id": "A",
+        "text": "To track tool results and decisions across steps"
+      },
+      {
+        "id": "B",
+        "text": "To replace all authorization"
+      },
+      {
+        "id": "C",
+        "text": "To make tokens free"
+      },
+      {
+        "id": "D",
+        "text": "To eliminate external APIs"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Working state connects intermediate observations to later actions.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0038",
+    "module": "AI",
+    "topic": "Agents",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "A payment tool can transfer funds. What is the most important operational constraint?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Require strong authorization and explicit approval for high-impact actions"
+      },
+      {
+        "id": "B",
+        "text": "Allow any retrieved document to trigger transfers"
+      },
+      {
+        "id": "C",
+        "text": "Skip audit logs"
+      },
+      {
+        "id": "D",
+        "text": "Disable rate limits"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "High-impact tool use needs explicit permissions, oversight and auditability.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0039",
+    "module": "AI",
+    "topic": "Agents",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "What is a sensible way to evaluate an agentic workflow?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Measure task completion, tool-call accuracy, safety, latency and cost"
+      },
+      {
+        "id": "B",
+        "text": "Count only how many words it produces"
+      },
+      {
+        "id": "C",
+        "text": "Judge solely by prompt length"
+      },
+      {
+        "id": "D",
+        "text": "Count number of agents"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Agent evaluation must examine end-to-end behavior and resource/safety tradeoffs.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0040",
+    "module": "AI",
+    "topic": "Agents",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "The agent's SQL tool returns zero rows because a filter is too restrictive. What should a robust agent do?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Inspect conditions and revise search within allowed scope"
+      },
+      {
+        "id": "B",
+        "text": "Invent results"
+      },
+      {
+        "id": "C",
+        "text": "Delete data"
+      },
+      {
+        "id": "D",
+        "text": "Return an unrelated answer"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Feedback from tools should inform bounded correction rather than fabricated results.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0041",
+    "module": "AI",
+    "topic": "Responsible",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "An AI loan-screening tool performs worse for one demographic group. What should be assessed?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Group-level error rates and fairness risks"
+      },
+      {
+        "id": "B",
+        "text": "Only overall accuracy"
+      },
+      {
+        "id": "C",
+        "text": "UI button color"
+      },
+      {
+        "id": "D",
+        "text": "Higher temperature"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Aggregate accuracy can conceal disparities across affected groups.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0042",
+    "module": "AI",
+    "topic": "Responsible",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "A medical assistant gives a diagnosis based only on a single ambiguous sentence. What is the safer response?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Acknowledge uncertainty and recommend appropriate professional review"
+      },
+      {
+        "id": "B",
+        "text": "Provide a definitive diagnosis"
+      },
+      {
+        "id": "C",
+        "text": "Hide uncertainty"
+      },
+      {
+        "id": "D",
+        "text": "Change fonts"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Health outputs require calibrated uncertainty and suitable expert input.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0043",
+    "module": "AI",
+    "topic": "Responsible",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "Which evaluation most directly tests whether generated factual claims match the retrieved evidence?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Faithfulness/groundedness assessment"
+      },
+      {
+        "id": "B",
+        "text": "Model file hash"
+      },
+      {
+        "id": "C",
+        "text": "Number of emojis"
+      },
+      {
+        "id": "D",
+        "text": "Average sentence length"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Groundedness measures support from provided evidence.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0044",
+    "module": "AI",
+    "topic": "Responsible",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "A model uses sensitive customer data inside an external API prompt. What is the first concern?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Privacy, retention and permitted data transfer"
+      },
+      {
+        "id": "B",
+        "text": "How colorful the output is"
+      },
+      {
+        "id": "C",
+        "text": "Sorting complexity"
+      },
+      {
+        "id": "D",
+        "text": "Cache replacement"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Sensitive data transmission must respect privacy and provider handling conditions.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0045",
+    "module": "AI",
+    "topic": "Responsible",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "A company evaluates its AI using only three ideal examples. What is the main risk?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The sample is unrepresentative and misses failures"
+      },
+      {
+        "id": "B",
+        "text": "Smaller evaluation sets always increase fairness"
+      },
+      {
+        "id": "C",
+        "text": "There is no risk"
+      },
+      {
+        "id": "D",
+        "text": "Every result becomes deterministic"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Representative test suites should cover real-world variation and edge cases.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0046",
+    "module": "AI",
+    "topic": "Responsible",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "An AI model output includes a precise-looking answer with no supporting source. What is the right action?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Verify the claim with trusted evidence"
+      },
+      {
+        "id": "B",
+        "text": "Assume precision implies truth"
+      },
+      {
+        "id": "C",
+        "text": "Increase top-p"
+      },
+      {
+        "id": "D",
+        "text": "Use more emojis"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Confidence and formatting are not evidence of correctness.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0047",
+    "module": "AI",
+    "topic": "Responsible",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "Which practice helps audit AI-assisted code decisions?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Record prompts, revisions, tests and approvals without leaking secrets"
+      },
+      {
+        "id": "B",
+        "text": "Delete change history"
+      },
+      {
+        "id": "C",
+        "text": "Skip tests"
+      },
+      {
+        "id": "D",
+        "text": "Commit API keys"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Traceable changes and reviews support accountability.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0048",
+    "module": "AI",
+    "topic": "Responsible",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "An AI-generated code patch passes public tests but fails security checks. What should determine release readiness?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Functional and security validation together"
+      },
+      {
+        "id": "B",
+        "text": "Passing public tests alone"
+      },
+      {
+        "id": "C",
+        "text": "Number of generated lines"
+      },
+      {
+        "id": "D",
+        "text": "Model popularity"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Correctness on visible examples does not eliminate security risk.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0049",
+    "module": "AI",
+    "topic": "Responsible",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "Why should human oversight remain in consequential AI decisions?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Models may err and accountability remains with responsible operators"
+      },
+      {
+        "id": "B",
+        "text": "LLMs have legal responsibility"
+      },
+      {
+        "id": "C",
+        "text": "It makes testing unnecessary"
+      },
+      {
+        "id": "D",
+        "text": "It guarantees bias-free outputs"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Oversight helps manage uncertainty, harms and accountability.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "AI-0050",
+    "module": "AI",
+    "topic": "Responsible",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "A team uses a benchmark from two years ago to choose a current model. What is a major evaluation issue?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Benchmark coverage may no longer represent present tasks and risks"
+      },
+      {
+        "id": "B",
+        "text": "Old benchmarks always improve accuracy"
+      },
+      {
+        "id": "C",
+        "text": "Prompt tokens are unlimited"
+      },
+      {
+        "id": "D",
+        "text": "Network bandwidth is irrelevant"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Evaluation sets and operational requirements require periodic refresh.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0051",
+    "module": "TECH",
+    "topic": "Programming",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "What is the time complexity of iterating i from 1 to n and j from 1 to i?",
+    "options": [
+      {
+        "id": "A",
+        "text": "O(n)"
+      },
+      {
+        "id": "B",
+        "text": "O(n log n)"
+      },
+      {
+        "id": "C",
+        "text": "O(n²)"
+      },
+      {
+        "id": "D",
+        "text": "O(log n)"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "The total iterations are 1+2+...+n = n(n+1)/2.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0052",
+    "module": "TECH",
+    "topic": "Programming",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "In C++, what happens when a non-empty vector is accessed at v[v.size()] with operator[]?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Always returns zero"
+      },
+      {
+        "id": "B",
+        "text": "It is undefined behavior"
+      },
+      {
+        "id": "C",
+        "text": "It automatically grows"
+      },
+      {
+        "id": "D",
+        "text": "It throws a guaranteed out_of_range exception"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "operator[] does not perform bounds checking; index size() is out of bounds.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0053",
+    "module": "TECH",
+    "topic": "Programming",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "Which C++ parameter declaration lets a function modify the caller's vector without copying?",
+    "options": [
+      {
+        "id": "A",
+        "text": "vector<int> v"
+      },
+      {
+        "id": "B",
+        "text": "const vector<int>& v"
+      },
+      {
+        "id": "C",
+        "text": "vector<int>& v"
+      },
+      {
+        "id": "D",
+        "text": "const vector<int> v"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "Non-const reference aliases the caller's vector and supports modification.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0054",
+    "module": "TECH",
+    "topic": "Programming",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "Why can sum = a+b overflow when a and b are int even if sum is long long?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The addition is evaluated as int before assignment"
+      },
+      {
+        "id": "B",
+        "text": "Long long cannot store sums"
+      },
+      {
+        "id": "C",
+        "text": "References are immutable"
+      },
+      {
+        "id": "D",
+        "text": "STL changes arithmetic"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Promote an operand before addition, for example 1LL*a+b.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0055",
+    "module": "TECH",
+    "topic": "Programming",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "A recursive function lacks an adequate base case. What is the likely consequence?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Automatic memoization"
+      },
+      {
+        "id": "B",
+        "text": "Unbounded recursion and possible stack overflow"
+      },
+      {
+        "id": "C",
+        "text": "Constant-time execution"
+      },
+      {
+        "id": "D",
+        "text": "Guaranteed compiler fix"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Recursion must terminate on all reachable paths.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0056",
+    "module": "TECH",
+    "topic": "Programming",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "What is printed by int x=5; cout << x++ << \" \" << x; ?",
+    "options": [
+      {
+        "id": "A",
+        "text": "6 6"
+      },
+      {
+        "id": "B",
+        "text": "5 6"
+      },
+      {
+        "id": "C",
+        "text": "5 5"
+      },
+      {
+        "id": "D",
+        "text": "Undefined behavior in all standards"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Post-increment yields old value then increments; separate insertion evaluations are sequenced left-to-right in modern C++.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0057",
+    "module": "TECH",
+    "topic": "Programming",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "What is the effect of passing a vector by value to a function?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The function receives a copy"
+      },
+      {
+        "id": "B",
+        "text": "The caller's storage is always mutated"
+      },
+      {
+        "id": "C",
+        "text": "No copy ever occurs"
+      },
+      {
+        "id": "D",
+        "text": "The vector becomes const"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Value parameters copy vector contents unless optimization/move semantics applies in specific call contexts.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0058",
+    "module": "TECH",
+    "topic": "Programming",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "Which STL structure supports amortized O(1) insertion at the end and random indexing?",
+    "options": [
+      {
+        "id": "A",
+        "text": "vector"
+      },
+      {
+        "id": "B",
+        "text": "list"
+      },
+      {
+        "id": "C",
+        "text": "set"
+      },
+      {
+        "id": "D",
+        "text": "queue"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "A vector supports contiguous storage and amortized constant-time push_back.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0059",
+    "module": "TECH",
+    "topic": "Programming",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "Which integer expression safely computes a binary search midpoint for nonnegative indices l <= r?",
+    "options": [
+      {
+        "id": "A",
+        "text": "l+r/2"
+      },
+      {
+        "id": "B",
+        "text": "(l+r)*2"
+      },
+      {
+        "id": "C",
+        "text": "l+(r-l)/2"
+      },
+      {
+        "id": "D",
+        "text": "r-l/2"
+      }
+    ],
+    "correct_answer": "C",
+    "explanation": "The difference-based formula avoids potential overflow in l+r.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0060",
+    "module": "TECH",
+    "topic": "Programming",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "What is the output of bool a=false, b=true; cout<<(a or b); ?",
+    "options": [
+      {
+        "id": "A",
+        "text": "0"
+      },
+      {
+        "id": "B",
+        "text": "1"
+      },
+      {
+        "id": "C",
+        "text": "Compilation error"
+      },
+      {
+        "id": "D",
+        "text": "Unspecified"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Logical OR is true if at least one operand is true.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0061",
+    "module": "TECH",
+    "topic": "DSA",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "An array is sorted and contains duplicate values. Which technique finds the first occurrence in O(log n)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Linear scan from start"
+      },
+      {
+        "id": "B",
+        "text": "Binary search for lower bound"
+      },
+      {
+        "id": "C",
+        "text": "Bubble sort"
+      },
+      {
+        "id": "D",
+        "text": "Depth-first search"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Lower-bound binary search locates first position not less than the target.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0062",
+    "module": "TECH",
+    "topic": "DSA",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "A window of length k slides across an array and the maximum is required for each window in linear time. Use?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Monotonic deque"
+      },
+      {
+        "id": "B",
+        "text": "Unsorted linked list"
+      },
+      {
+        "id": "C",
+        "text": "Nested loops only"
+      },
+      {
+        "id": "D",
+        "text": "DFS"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "A decreasing deque of candidate indices supports O(n) total updates.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0063",
+    "module": "TECH",
+    "topic": "DSA",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "What condition makes Dijkstra's standard shortest-path algorithm unreliable?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Graph has nonnegative weights"
+      },
+      {
+        "id": "B",
+        "text": "Graph contains negative-weight edges"
+      },
+      {
+        "id": "C",
+        "text": "Graph has more than two nodes"
+      },
+      {
+        "id": "D",
+        "text": "Graph is directed"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Dijkstra assumes nonnegative edge weights for greedy finalization.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0064",
+    "module": "TECH",
+    "topic": "DSA",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "Which structure is typically used to implement BFS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Queue"
+      },
+      {
+        "id": "B",
+        "text": "Stack"
+      },
+      {
+        "id": "C",
+        "text": "Priority queue for all weights"
+      },
+      {
+        "id": "D",
+        "text": "Recursive backtracking only"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "BFS explores nodes in FIFO order by distance layers.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0065",
+    "module": "TECH",
+    "topic": "DSA",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "For an undirected graph, which method detects a cycle during DFS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Track visited nodes and exclude the parent edge"
+      },
+      {
+        "id": "B",
+        "text": "Treat every visited edge as a cycle without parent"
+      },
+      {
+        "id": "C",
+        "text": "Sort vertices first"
+      },
+      {
+        "id": "D",
+        "text": "Use binary search"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "A visited neighbor other than parent indicates a cycle in undirected DFS.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0066",
+    "module": "TECH",
+    "topic": "DSA",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "A DP state is dp[i][j] based on dp[i+1][j-1]. Which loop order is generally suitable?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Increase i then decrease j"
+      },
+      {
+        "id": "B",
+        "text": "Decrease i so i+1 is already computed, with j increasing"
+      },
+      {
+        "id": "C",
+        "text": "Random state order"
+      },
+      {
+        "id": "D",
+        "text": "Only BFS"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Dependencies must be computed before their consumers.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0067",
+    "module": "TECH",
+    "topic": "DSA",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "Which structure implements an LRU cache with average O(1) get and put?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hash map plus doubly linked list"
+      },
+      {
+        "id": "B",
+        "text": "Only sorted array"
+      },
+      {
+        "id": "C",
+        "text": "Binary heap alone"
+      },
+      {
+        "id": "D",
+        "text": "Stack alone"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "A hash map finds nodes, and a doubly linked list maintains recency order.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0068",
+    "module": "TECH",
+    "topic": "DSA",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "When can a greedy choice be used safely?",
+    "options": [
+      {
+        "id": "A",
+        "text": "When a proof establishes greedy-choice property and optimal substructure"
+      },
+      {
+        "id": "B",
+        "text": "Whenever the input is sorted"
+      },
+      {
+        "id": "C",
+        "text": "Whenever DP is hard"
+      },
+      {
+        "id": "D",
+        "text": "Whenever output is numeric"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Greedy algorithms require structural justification, not just apparent simplicity.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0069",
+    "module": "TECH",
+    "topic": "DSA",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "What is the amortized expected complexity of unordered_map lookup in typical C++ implementations?",
+    "options": [
+      {
+        "id": "A",
+        "text": "O(1) average, O(n) worst case"
+      },
+      {
+        "id": "B",
+        "text": "Always O(log n)"
+      },
+      {
+        "id": "C",
+        "text": "Always O(n log n)"
+      },
+      {
+        "id": "D",
+        "text": "Always O(1) worst case"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Hash table average lookup is constant, but collisions can degrade worst-case performance.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0070",
+    "module": "TECH",
+    "topic": "DSA",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "An algorithm explores all subsets of n elements. What is the number of candidate subsets?",
+    "options": [
+      {
+        "id": "A",
+        "text": "n²"
+      },
+      {
+        "id": "B",
+        "text": "2^n"
+      },
+      {
+        "id": "C",
+        "text": "n log n"
+      },
+      {
+        "id": "D",
+        "text": "n!"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "Each element has two decisions: include or exclude.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0071",
+    "module": "TECH",
+    "topic": "OOP",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "Which OOP principle hides internal representation behind methods?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Encapsulation"
+      },
+      {
+        "id": "B",
+        "text": "Inheritance only"
+      },
+      {
+        "id": "C",
+        "text": "Polymorphism only"
+      },
+      {
+        "id": "D",
+        "text": "Serialization"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Encapsulation controls access to state and exposes a defined interface.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0072",
+    "module": "TECH",
+    "topic": "OOP",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "A base class pointer invokes a derived implementation at runtime in C++. What must the member function generally be?",
+    "options": [
+      {
+        "id": "A",
+        "text": "virtual"
+      },
+      {
+        "id": "B",
+        "text": "static"
+      },
+      {
+        "id": "C",
+        "text": "private only"
+      },
+      {
+        "id": "D",
+        "text": "constexpr only"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Virtual dispatch supports runtime polymorphism through base references/pointers.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0073",
+    "module": "TECH",
+    "topic": "OOP",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "What distinguishes method overloading from overriding?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Overloading uses different signatures while overriding replaces an inherited virtual function"
+      },
+      {
+        "id": "B",
+        "text": "Both require different classes"
+      },
+      {
+        "id": "C",
+        "text": "Overriding always changes parameters"
+      },
+      {
+        "id": "D",
+        "text": "Overloading cannot exist in C++"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Overloading selects by signature; overriding provides runtime substitution for inherited virtual behavior.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0074",
+    "module": "TECH",
+    "topic": "OOP",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "An object contains a helper component whose lifetime it controls. Which relationship is usually preferred?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Composition"
+      },
+      {
+        "id": "B",
+        "text": "Public inheritance regardless of is-a"
+      },
+      {
+        "id": "C",
+        "text": "Global state"
+      },
+      {
+        "id": "D",
+        "text": "Unsafe cast"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Composition models has-a ownership without falsely declaring an is-a relationship.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0075",
+    "module": "TECH",
+    "topic": "DBMS",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "An index accelerates many reads but increases modification work. Why?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indexes must be maintained during inserts, updates and deletes"
+      },
+      {
+        "id": "B",
+        "text": "Indexes delete primary keys"
+      },
+      {
+        "id": "C",
+        "text": "Indexes prevent caching"
+      },
+      {
+        "id": "D",
+        "text": "Indexes make rows immutable"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Secondary structures require updates and storage for each indexed write.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0076",
+    "module": "TECH",
+    "topic": "DBMS",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "A transaction transfers money between accounts. Which ACID property ensures all debit and credit operations commit together or not at all?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Atomicity"
+      },
+      {
+        "id": "B",
+        "text": "Isolation only"
+      },
+      {
+        "id": "C",
+        "text": "Durability only"
+      },
+      {
+        "id": "D",
+        "text": "Normalization"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Atomicity treats a transaction as an indivisible unit.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0077",
+    "module": "TECH",
+    "topic": "DBMS",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "Two transactions each wait for a lock held by the other. What condition exists?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deadlock"
+      },
+      {
+        "id": "B",
+        "text": "Dirty read"
+      },
+      {
+        "id": "C",
+        "text": "Phantom read only"
+      },
+      {
+        "id": "D",
+        "text": "Index fragmentation only"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Circular waiting with held locks produces deadlock.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0078",
+    "module": "TECH",
+    "topic": "DBMS",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "Which index is generally useful for WHERE customer_id=7 on a very large table?",
+    "options": [
+      {
+        "id": "A",
+        "text": "An index on customer_id"
+      },
+      {
+        "id": "B",
+        "text": "An index only on an unrelated field"
+      },
+      {
+        "id": "C",
+        "text": "No index can ever help"
+      },
+      {
+        "id": "D",
+        "text": "A larger VARCHAR column"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "A selective predicate on an indexed key enables efficient lookup, depending on query plans.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0079",
+    "module": "TECH",
+    "topic": "DBMS",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "A query uses LEFT JOIN between customers and orders. What happens to customers with no order?",
+    "options": [
+      {
+        "id": "A",
+        "text": "They remain with NULL values on order columns"
+      },
+      {
+        "id": "B",
+        "text": "They always disappear"
+      },
+      {
+        "id": "C",
+        "text": "The query fails"
+      },
+      {
+        "id": "D",
+        "text": "They duplicate exactly twice"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "LEFT JOIN preserves every row from its left relation.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0080",
+    "module": "TECH",
+    "topic": "DBMS",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "What is the logical role of HAVING after GROUP BY?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Filter aggregated groups"
+      },
+      {
+        "id": "B",
+        "text": "Filter individual base rows before grouping in all cases"
+      },
+      {
+        "id": "C",
+        "text": "Sort groups"
+      },
+      {
+        "id": "D",
+        "text": "Create indexes"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "HAVING filters groups using aggregate-aware conditions.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0081",
+    "module": "TECH",
+    "topic": "DBMS",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "Scores are 95, 95, 87. What are RANK values ordered descending?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1,1,2"
+      },
+      {
+        "id": "B",
+        "text": "1,1,3"
+      },
+      {
+        "id": "C",
+        "text": "1,2,3"
+      },
+      {
+        "id": "D",
+        "text": "0,0,1"
+      }
+    ],
+    "correct_answer": "B",
+    "explanation": "RANK leaves a gap after ties, unlike DENSE_RANK.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0082",
+    "module": "TECH",
+    "topic": "DBMS",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "Which normalization goal most directly removes partial dependency of a non-key attribute on part of a composite candidate key?",
+    "options": [
+      {
+        "id": "A",
+        "text": "2NF"
+      },
+      {
+        "id": "B",
+        "text": "1NF alone"
+      },
+      {
+        "id": "C",
+        "text": "BCNF automatically from any data"
+      },
+      {
+        "id": "D",
+        "text": "Denormalization"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Second normal form removes partial functional dependencies on candidate keys.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0083",
+    "module": "TECH",
+    "topic": "DBMS",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "Under read committed isolation, which anomaly may still occur?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Non-repeatable read"
+      },
+      {
+        "id": "B",
+        "text": "Dirty read necessarily"
+      },
+      {
+        "id": "C",
+        "text": "Every serializability anomaly prevented"
+      },
+      {
+        "id": "D",
+        "text": "Schema loss"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Separate reads may see newly committed values between statements.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0084",
+    "module": "TECH",
+    "topic": "DBMS",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "Why might an optimizer choose a table scan rather than an available index?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The query selects most rows, making scanning cheaper"
+      },
+      {
+        "id": "B",
+        "text": "An index is always mandatory"
+      },
+      {
+        "id": "C",
+        "text": "Indexes cannot handle integers"
+      },
+      {
+        "id": "D",
+        "text": "Indexes disable joins"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Cost-based optimizers compare I/O and selectivity, and scans can win for broad retrieval.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0085",
+    "module": "TECH",
+    "topic": "DBMS",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "A query returns COUNT(col)=2 and COUNT(*)=3. What follows?",
+    "options": [
+      {
+        "id": "A",
+        "text": "One row has NULL in col"
+      },
+      {
+        "id": "B",
+        "text": "One row was deleted"
+      },
+      {
+        "id": "C",
+        "text": "The primary key is duplicated"
+      },
+      {
+        "id": "D",
+        "text": "COUNT(*) ignored a row"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "COUNT(col) excludes NULL values, while COUNT(*) counts all rows.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0086",
+    "module": "TECH",
+    "topic": "DBMS",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "Which operation can be made safer with an explicit migration transaction when the database supports transactional DDL?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Schema changes requiring rollback on failure"
+      },
+      {
+        "id": "B",
+        "text": "Dropping backups first"
+      },
+      {
+        "id": "C",
+        "text": "Disabling all integrity checks"
+      },
+      {
+        "id": "D",
+        "text": "Skipping staging"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Transactional schema changes can roll back on failure where supported; behavior varies by database.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0087",
+    "module": "TECH",
+    "topic": "DBMS",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "A composite index is created on (region, customer_id). Which filter most reliably exploits its leftmost prefix?",
+    "options": [
+      {
+        "id": "A",
+        "text": "WHERE region='west'"
+      },
+      {
+        "id": "B",
+        "text": "WHERE customer_id=42 alone on every engine"
+      },
+      {
+        "id": "C",
+        "text": "WHERE comment LIKE '%x' only"
+      },
+      {
+        "id": "D",
+        "text": "No filter can exploit it"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Traditional composite B-tree use favors predicates on the leading indexed column.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0088",
+    "module": "TECH",
+    "topic": "DBMS",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "A table has many repeated department names and department address depends on department. What design helps avoid update anomalies?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Move department attributes to a separate related table"
+      },
+      {
+        "id": "B",
+        "text": "Duplicate department addresses in each employee row"
+      },
+      {
+        "id": "C",
+        "text": "Remove keys"
+      },
+      {
+        "id": "D",
+        "text": "Store everything in one unvalidated text field"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Normalization isolates department facts and reduces duplicate updates.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0089",
+    "module": "TECH",
+    "topic": "Modern",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "Which HTTP method is intended to be idempotent for replacing a resource at a known URL?",
+    "options": [
+      {
+        "id": "A",
+        "text": "PUT"
+      },
+      {
+        "id": "B",
+        "text": "POST in all applications"
+      },
+      {
+        "id": "C",
+        "text": "CONNECT"
+      },
+      {
+        "id": "D",
+        "text": "TRACE"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Repeated identical PUT operations should have the same intended resource effect.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0090",
+    "module": "TECH",
+    "topic": "Modern",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "What does HTTP 401 primarily indicate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Authentication credentials are missing or invalid"
+      },
+      {
+        "id": "B",
+        "text": "The server crashed"
+      },
+      {
+        "id": "C",
+        "text": "The resource was created"
+      },
+      {
+        "id": "D",
+        "text": "The client is authorized but access forbidden"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "401 is authentication-related; 403 indicates access is forbidden.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0091",
+    "module": "TECH",
+    "topic": "Modern",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "An API key embedded directly in frontend JavaScript is risky because?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Anyone can inspect the delivered code and recover it"
+      },
+      {
+        "id": "B",
+        "text": "JavaScript encrypts it automatically"
+      },
+      {
+        "id": "C",
+        "text": "Browsers never download scripts"
+      },
+      {
+        "id": "D",
+        "text": "API keys are always public"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Client-delivered code and requests can reveal secrets; keep privileged credentials on a server.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0092",
+    "module": "TECH",
+    "topic": "Modern",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "Which is the strongest distinction between authentication and authorization?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Authentication checks identity while authorization checks permissions"
+      },
+      {
+        "id": "B",
+        "text": "Both mean password encryption"
+      },
+      {
+        "id": "C",
+        "text": "Authorization always occurs first"
+      },
+      {
+        "id": "D",
+        "text": "Authentication grants every permission"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "The system first identifies the principal then enforces allowed actions.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0093",
+    "module": "TECH",
+    "topic": "Modern",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "Why is HTTPS preferable to plain HTTP for credentials?",
+    "options": [
+      {
+        "id": "A",
+        "text": "TLS provides transport encryption and server authentication"
+      },
+      {
+        "id": "B",
+        "text": "HTTPS guarantees bug-free servers"
+      },
+      {
+        "id": "C",
+        "text": "HTTP has no headers"
+      },
+      {
+        "id": "D",
+        "text": "TLS replaces authentication logic"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "TLS protects transport confidentiality/integrity and validates endpoints when configured correctly.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0094",
+    "module": "TECH",
+    "topic": "Modern",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "A Docker image differs from a running container because?",
+    "options": [
+      {
+        "id": "A",
+        "text": "An image is a packaged template while a container is its instantiated runtime"
+      },
+      {
+        "id": "B",
+        "text": "Images are always mutable processes"
+      },
+      {
+        "id": "C",
+        "text": "Containers never have filesystems"
+      },
+      {
+        "id": "D",
+        "text": "They are identical objects"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "A container executes a filesystem/configuration built from an image.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0095",
+    "module": "TECH",
+    "topic": "Modern",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "Which Git command integrates changes from another branch into the current branch?",
+    "options": [
+      {
+        "id": "A",
+        "text": "git merge"
+      },
+      {
+        "id": "B",
+        "text": "git init"
+      },
+      {
+        "id": "C",
+        "text": "git status"
+      },
+      {
+        "id": "D",
+        "text": "git log"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "git merge combines branch histories and may require conflict resolution.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0096",
+    "module": "TECH",
+    "topic": "Modern",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "In CI, what happens on each proposed code change?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Automated build/test checks execute before integration"
+      },
+      {
+        "id": "B",
+        "text": "Production must always deploy immediately"
+      },
+      {
+        "id": "C",
+        "text": "Developers cannot make commits"
+      },
+      {
+        "id": "D",
+        "text": "All tests are manual"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Continuous integration aims to validate integrations through frequent automated checks.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0097",
+    "module": "TECH",
+    "topic": "Modern",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "Which cloud service model generally leaves application code with the customer but abstracts infrastructure and runtime management?",
+    "options": [
+      {
+        "id": "A",
+        "text": "PaaS"
+      },
+      {
+        "id": "B",
+        "text": "IaaS always"
+      },
+      {
+        "id": "C",
+        "text": "SaaS always"
+      },
+      {
+        "id": "D",
+        "text": "On-prem hardware"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Platform as a Service typically manages infrastructure/runtime while developers provide applications.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0098",
+    "module": "TECH",
+    "topic": "Modern",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "What is DNS used for?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Resolving domain names to relevant records such as IP addresses"
+      },
+      {
+        "id": "B",
+        "text": "Encrypting all data"
+      },
+      {
+        "id": "C",
+        "text": "Compiling C++"
+      },
+      {
+        "id": "D",
+        "text": "Authorizing SQL queries"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "DNS provides distributed naming and resource records.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0099",
+    "module": "TECH",
+    "topic": "Modern",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "Which vulnerability is mitigated primarily by parameterized SQL queries?",
+    "options": [
+      {
+        "id": "A",
+        "text": "SQL injection"
+      },
+      {
+        "id": "B",
+        "text": "Physical disk failure"
+      },
+      {
+        "id": "C",
+        "text": "Lost network packets"
+      },
+      {
+        "id": "D",
+        "text": "CPU starvation"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Parameters separate SQL structure from untrusted user-supplied values.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0100",
+    "module": "TECH",
+    "topic": "Modern",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "Why should retries for an order-creation endpoint use idempotency keys?",
+    "options": [
+      {
+        "id": "A",
+        "text": "To avoid duplicate business operations on repeated requests"
+      },
+      {
+        "id": "B",
+        "text": "To speed up sorting"
+      },
+      {
+        "id": "C",
+        "text": "To remove authentication"
+      },
+      {
+        "id": "D",
+        "text": "To make HTTP stateless automatically"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "An idempotency key allows the server to recognize repeated attempts for the same intended operation.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0101",
+    "module": "TECH",
+    "topic": "Modern",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "An alert system reports thousands of logs but cannot distinguish service failures. What improvement is most useful?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Define meaningful metrics, structured logs and alert thresholds"
+      },
+      {
+        "id": "B",
+        "text": "Disable logging entirely"
+      },
+      {
+        "id": "C",
+        "text": "Increase UI animations"
+      },
+      {
+        "id": "D",
+        "text": "Create more random alerts"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Observability needs actionable instrumentation and sensible signal design.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0102",
+    "module": "TECH",
+    "topic": "Modern",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "Which Scrum activity helps a team inspect its process and decide improvements?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sprint retrospective"
+      },
+      {
+        "id": "B",
+        "text": "Code compilation"
+      },
+      {
+        "id": "C",
+        "text": "Production rollback"
+      },
+      {
+        "id": "D",
+        "text": "Database migration"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "A retrospective reflects on the team's process and adaptation opportunities.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0103",
+    "module": "TECH",
+    "topic": "Modern",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "What advantage does a cache provide for frequently requested immutable data?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reduce repeated expensive retrieval at the cost of maintaining consistency"
+      },
+      {
+        "id": "B",
+        "text": "Guarantee every request is newer than origin"
+      },
+      {
+        "id": "C",
+        "text": "Eliminate need for cache invalidation"
+      },
+      {
+        "id": "D",
+        "text": "Increase network traffic intentionally"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Caching improves latency/load but creates freshness and invalidation concerns.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  },
+  {
+    "id": "TECH-0104",
+    "module": "TECH",
+    "topic": "Modern",
+    "kind": "single_choice",
+    "difficulty": "medium",
+    "question": "Which security practice minimizes impact when a service account is compromised?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Least-privilege permissions"
+      },
+      {
+        "id": "B",
+        "text": "Grant administrator to every service"
+      },
+      {
+        "id": "C",
+        "text": "Reuse one secret everywhere"
+      },
+      {
+        "id": "D",
+        "text": "Disable audit logs"
+      }
+    ],
+    "correct_answer": "A",
+    "explanation": "Least privilege restricts permissions to necessary operations.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026",
+      "official_education"
+    ],
+    "verified": "editorial_review_pending"
+  }
+]

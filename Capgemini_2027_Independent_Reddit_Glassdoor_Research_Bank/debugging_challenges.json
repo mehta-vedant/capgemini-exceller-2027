@@ -1,0 +1,189 @@
+[
+  {
+    "id": "DBG-01",
+    "title": "Clockwise circular dial",
+    "statement": "Numbers 1..N form a circle. Start at 1, move clockwise to each target in order, paying one per edge. Print total cost.",
+    "inspired_by": [
+      "R02"
+    ],
+    "provenance": "reconstructed_original_practice",
+    "language": "cpp17",
+    "buggy_code": "#include <bits/stdc++.h>\nusing namespace std;\nint main(){int n,m;cin>>n>>m;int cur=1;long long ans=0;while(m--){int to;cin>>to;ans+=abs(to-cur);cur=1;}cout<<ans<<\"\\n\";}",
+    "reference_code": "#include <bits/stdc++.h>\nusing namespace std;\nint main(){int n,m;cin>>n>>m;int cur=1;long long ans=0;while(m--){int to;cin>>to;ans+=(to-cur+n)%n;cur=to;}cout<<ans<<\"\\n\";}",
+    "tests": [
+      {
+        "input": "5 3\n4 2 5\n",
+        "output": "9\n"
+      },
+      {
+        "input": "4 3\n1 1 1\n",
+        "output": "0\n"
+      },
+      {
+        "input": "4 2\n4 2\n",
+        "output": "5\n"
+      }
+    ],
+    "intended_bugs": [
+      "Absolute distance ignores clockwise wrap",
+      "Current position incorrectly reset"
+    ],
+    "complexity": "O(m) time, O(1) extra space"
+  },
+  {
+    "id": "DBG-02",
+    "title": "Two-ended battery processing",
+    "statement": "Given positive pod capacities and budgets L=floor(K/2), R=ceil(K/2), completely consume as many whole pods as possible from left using L then right using R, without processing the same pod twice. Print emptied count. This is a precise training reconstruction, not a verbatim employer problem.",
+    "inspired_by": [
+      "R01"
+    ],
+    "provenance": "reconstructed_original_practice",
+    "language": "cpp17",
+    "buggy_code": "#include <bits/stdc++.h>\nusing namespace std;\nint main(){int n;long long k;cin>>n>>k;vector<long long>a(n);for(auto &x:a)cin>>x;int l=0,r=n-1,ans=0;long long x=k/2,y=k/2;while(l<r){if(x>a[l]){x-=a[l++];ans++;}else break; if(y>=a[r]){y-=a[r--];ans++;}else break;}cout<<ans<<\"\\n\";}",
+    "reference_code": "#include <bits/stdc++.h>\nusing namespace std;\nint main(){int n;long long k;cin>>n>>k;vector<long long>a(n);for(auto &x:a)cin>>x;int l=0,r=n-1,ans=0;long long x=k/2,y=(k+1)/2;while(l<=r && x>=a[l]){x-=a[l++];ans++;}while(l<=r && y>=a[r]){y-=a[r--];ans++;}cout<<ans<<\"\\n\";}",
+    "tests": [
+      {
+        "input": "5 10\n2 1 3 2 2\n",
+        "output": "4\n"
+      },
+      {
+        "input": "3 0\n1 1 1\n",
+        "output": "0\n"
+      },
+      {
+        "input": "1 5\n2\n",
+        "output": "1\n"
+      },
+      {
+        "input": "3 8\n1 1 1\n",
+        "output": "3\n"
+      }
+    ],
+    "intended_bugs": [
+      "Incorrect back budget rounding",
+      "Strict > instead of >= and prematurely coupled processing"
+    ],
+    "complexity": "O(n) time, O(n) for input array"
+  },
+  {
+    "id": "DBG-03",
+    "title": "Minimum replacements to one category",
+    "statement": "Array contains only category IDs 1,2,3. Each operation can replace one array value with any category. Min operations so all match.",
+    "inspired_by": [
+      "R01"
+    ],
+    "provenance": "reconstructed_original_practice",
+    "language": "cpp17",
+    "buggy_code": "#include <bits/stdc++.h>\nusing namespace std;\nint main(){int n;cin>>n;int f[4]={};for(int i=0;i<n;i++){int x;cin>>x;f[x]++;}cout<<n-min({f[1],f[2],f[3]})<<\"\\n\";}",
+    "reference_code": "#include <bits/stdc++.h>\nusing namespace std;\nint main(){int n;cin>>n;int f[4]={};for(int i=0;i<n;i++){int x;cin>>x;f[x]++;}cout<<n-max({f[1],f[2],f[3]})<<\"\\n\";}",
+    "tests": [
+      {
+        "input": "5\n1 3 2 3 3\n",
+        "output": "2\n"
+      },
+      {
+        "input": "4\n2 2 2 2\n",
+        "output": "0\n"
+      },
+      {
+        "input": "3\n1 2 3\n",
+        "output": "2\n"
+      }
+    ],
+    "intended_bugs": [
+      "Uses minimum instead of maximum frequency"
+    ],
+    "complexity": "O(n) time O(1) space"
+  },
+  {
+    "id": "DBG-04",
+    "title": "Unweighted shortest path in grid",
+    "statement": "Given n,m and grid of . and #, find minimum 4-direction steps from (0,0) to (n-1,m-1), or -1 if blocked/unreachable.",
+    "inspired_by": [
+      "R05"
+    ],
+    "provenance": "reconstructed_original_practice",
+    "language": "cpp17",
+    "buggy_code": "#include <bits/stdc++.h>\nusing namespace std;\nint main(){int n,m;cin>>n>>m;vector<string>g(n);for(auto &x:g)cin>>x;vector<vector<int>>d(n,vector<int>(m,-1));queue<pair<int,int>>q;q.push({0,0});d[0][0]=0;int dx[4]={1,-1,0,0},dy[4]={0,0,1,-1};while(!q.empty()){auto [x,y]=q.front();q.pop();for(int k=0;k<4;k++){int a=x+dx[k],b=y+dy[k];if(a>=0&&b>=0&&a<n&&b<m&&d[a][b]==-1){d[a][b]=d[x][y]+1;q.push({a,b});}}}cout<<d[n-1][m-1]<<\"\\n\";}",
+    "reference_code": "#include <bits/stdc++.h>\nusing namespace std;\nint main(){int n,m;cin>>n>>m;vector<string>g(n);for(auto &x:g)cin>>x;if(g[0][0]=='#'||g[n-1][m-1]=='#'){cout<<-1<<\"\\n\";return 0;}vector<vector<int>>d(n,vector<int>(m,-1));queue<pair<int,int>>q;q.push({0,0});d[0][0]=0;int dx[4]={1,-1,0,0},dy[4]={0,0,1,-1};while(!q.empty()){auto [x,y]=q.front();q.pop();for(int k=0;k<4;k++){int a=x+dx[k],b=y+dy[k];if(a>=0&&b>=0&&a<n&&b<m&&g[a][b]=='.'&&d[a][b]==-1){d[a][b]=d[x][y]+1;q.push({a,b});}}}cout<<d[n-1][m-1]<<\"\\n\";}",
+    "tests": [
+      {
+        "input": "2 2\n..\n..\n",
+        "output": "2\n"
+      },
+      {
+        "input": "2 2\n.#\n#.\n",
+        "output": "-1\n"
+      },
+      {
+        "input": "1 1\n#\n",
+        "output": "-1\n"
+      }
+    ],
+    "intended_bugs": [
+      "Does not prevent walking through walls",
+      "Does not handle blocked start/end"
+    ],
+    "complexity": "O(n*m) time and space"
+  },
+  {
+    "id": "DBG-05",
+    "title": "Minimum swaps for binary groups",
+    "statement": "Array of n values each 0 or 1. Find minimum swaps of arbitrary positions required to move all 0s before 1s.",
+    "inspired_by": [
+      "R04"
+    ],
+    "provenance": "reconstructed_original_practice",
+    "language": "cpp17",
+    "buggy_code": "#include <bits/stdc++.h>\nusing namespace std;\nint main(){int n;cin>>n;vector<int>a(n);int zeros=0;for(int &x:a){cin>>x;zeros+=x==0;}int wrong=0;for(int i=0;i<zeros;i++)wrong+=a[i]==0;cout<<wrong<<\"\\n\";}",
+    "reference_code": "#include <bits/stdc++.h>\nusing namespace std;\nint main(){int n;cin>>n;vector<int>a(n);int zeros=0;for(int &x:a){cin>>x;zeros+=x==0;}int wrong=0;for(int i=0;i<zeros;i++)wrong+=a[i]==1;cout<<wrong<<\"\\n\";}",
+    "tests": [
+      {
+        "input": "5\n1 0 1 0 0\n",
+        "output": "2\n"
+      },
+      {
+        "input": "4\n0 0 1 1\n",
+        "output": "0\n"
+      },
+      {
+        "input": "4\n1 1 0 0\n",
+        "output": "2\n"
+      }
+    ],
+    "intended_bugs": [
+      "Counts correctly placed zeros rather than misplaced ones"
+    ],
+    "complexity": "O(n) time and O(n) storage"
+  },
+  {
+    "id": "DBG-06",
+    "title": "2D DP minimum path sum",
+    "statement": "Given nonnegative n x m grid, return minimum sum along a path from top-left to bottom-right moving right or down.",
+    "inspired_by": [
+      "O01"
+    ],
+    "provenance": "reconstructed_original_practice",
+    "language": "cpp17",
+    "buggy_code": "#include <bits/stdc++.h>\nusing namespace std;\nint main(){int n,m;cin>>n>>m;vector<vector<long long>>a(n,vector<long long>(m)),d(n,vector<long long>(m));for(auto &row:a)for(auto &x:row)cin>>x;d[0][0]=0;for(int i=0;i<n;i++)for(int j=0;j<m;j++){if(!i&&!j)continue;long long v=LLONG_MAX/4;if(i)v=min(v,d[i-1][j]);if(j)v=min(v,d[i][j-1]);d[i][j]=v+a[i][j];}cout<<d[n-1][m-1]<<\"\\n\";}",
+    "reference_code": "#include <bits/stdc++.h>\nusing namespace std;\nint main(){int n,m;cin>>n>>m;vector<vector<long long>>a(n,vector<long long>(m)),d(n,vector<long long>(m));for(auto &row:a)for(auto &x:row)cin>>x;d[0][0]=a[0][0];for(int i=0;i<n;i++)for(int j=0;j<m;j++){if(!i&&!j)continue;long long v=LLONG_MAX/4;if(i)v=min(v,d[i-1][j]);if(j)v=min(v,d[i][j-1]);d[i][j]=v+a[i][j];}cout<<d[n-1][m-1]<<\"\\n\";}",
+    "tests": [
+      {
+        "input": "2 3\n1 3 1\n1 5 1\n",
+        "output": "6\n"
+      },
+      {
+        "input": "1 1\n7\n",
+        "output": "7\n"
+      },
+      {
+        "input": "2 2\n1 2\n3 4\n",
+        "output": "7\n"
+      }
+    ],
+    "intended_bugs": [
+      "Base case should include starting cell weight"
+    ],
+    "complexity": "O(n*m) time and space"
+  }
+]

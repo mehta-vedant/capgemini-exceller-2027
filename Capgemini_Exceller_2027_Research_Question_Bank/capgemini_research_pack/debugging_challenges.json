@@ -1,0 +1,274 @@
+[
+  {
+    "id": "DBG-001",
+    "title": "Clockwise Circular Visits",
+    "topic": "arrays",
+    "language": "cpp17",
+    "statement": "Given n and a sequence of 1-indexed targets on a numbered circle, starting at 1, output total clockwise steps needed to visit targets in order.",
+    "starter_code": "#include <bits/stdc++.h>\nusing namespace std;\nint main(){int n,m;cin>>n>>m;long long ans=0;int pos=1;while(m--){int x;cin>>x;ans+=abs(x-pos);pos=x;}cout<<ans<<\"\\n\";}",
+    "reference_solution": "#include <bits/stdc++.h>\nusing namespace std;\nint main(){int n,m;cin>>n>>m;long long ans=0;int pos=1;while(m--){int x;cin>>x;ans+=(x-pos+n)%n;pos=x;}cout<<ans<<\"\\n\";}",
+    "public_tests": [
+      {
+        "input": "5 3\n3 1 5\n",
+        "output": "9\n"
+      },
+      {
+        "input": "4 2\n1 4\n",
+        "output": "3\n"
+      }
+    ],
+    "hidden_tests": [
+      {
+        "input": "6 3\n6 2 4\n",
+        "output": "9\n"
+      }
+    ],
+    "bugs": [
+      "Absolute difference ignores clockwise wraparound"
+    ],
+    "provenance": "original_exam_aligned",
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026"
+    ],
+    "is_actual_exam_question": false
+  },
+  {
+    "id": "DBG-002",
+    "title": "Binary Search Last Element",
+    "topic": "binary_search",
+    "language": "cpp17",
+    "statement": "Given sorted n integers and target x, print zero-based index if present, else -1.",
+    "starter_code": "#include <bits/stdc++.h>\nusing namespace std;\nint main(){int n,x;cin>>n>>x;vector<int>a(n);for(int&i:a)cin>>i;int l=0,r=n-1,ans=-1;while(l<r){int m=l+(r-l)/2;if(a[m]==x){ans=m;break;}if(a[m]<x)l=m+1;else r=m-1;}cout<<ans<<\"\\n\";}",
+    "reference_solution": "#include <bits/stdc++.h>\nusing namespace std;\nint main(){int n,x;cin>>n>>x;vector<int>a(n);for(int&i:a)cin>>i;int l=0,r=n-1,ans=-1;while(l<=r){int m=l+(r-l)/2;if(a[m]==x){ans=m;break;}if(a[m]<x)l=m+1;else r=m-1;}cout<<ans<<\"\\n\";}",
+    "public_tests": [
+      {
+        "input": "1 7\n7\n",
+        "output": "0\n"
+      },
+      {
+        "input": "4 9\n1 3 5 9\n",
+        "output": "3\n"
+      }
+    ],
+    "hidden_tests": [
+      {
+        "input": "3 8\n1 4 7\n",
+        "output": "-1\n"
+      }
+    ],
+    "bugs": [
+      "Loop uses l<r instead of l<=r"
+    ],
+    "provenance": "original_exam_aligned",
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026"
+    ],
+    "is_actual_exam_question": false
+  },
+  {
+    "id": "DBG-003",
+    "title": "Shortest Reach in Unweighted Graph",
+    "topic": "graphs",
+    "language": "cpp17",
+    "statement": "Given undirected n-vertex m-edge graph and source s (1-indexed), output shortest edge distances to each vertex, -1 for unreachable.",
+    "starter_code": "#include <bits/stdc++.h>\nusing namespace std;\nint main(){int n,m,s;cin>>n>>m>>s;vector<vector<int>>g(n+1);for(int i=0,u,v;i<m;i++){cin>>u>>v;g[u].push_back(v);g[v].push_back(u);}vector<int>d(n+1,-1);queue<int>q;q.push(s);d[s]=0;while(!q.empty()){int u=q.front();q.pop();for(int v:g[u])if(d[v]==-1){d[v]=d[u];q.push(v);}}for(int i=1;i<=n;i++)cout<<d[i]<<(i==n?'\\n':' ');}",
+    "reference_solution": "#include <bits/stdc++.h>\nusing namespace std;\nint main(){int n,m,s;cin>>n>>m>>s;vector<vector<int>>g(n+1);for(int i=0,u,v;i<m;i++){cin>>u>>v;g[u].push_back(v);g[v].push_back(u);}vector<int>d(n+1,-1);queue<int>q;q.push(s);d[s]=0;while(!q.empty()){int u=q.front();q.pop();for(int v:g[u])if(d[v]==-1){d[v]=d[u]+1;q.push(v);}}for(int i=1;i<=n;i++)cout<<d[i]<<(i==n?'\\n':' ');}",
+    "public_tests": [
+      {
+        "input": "4 2 1\n1 2\n2 3\n",
+        "output": "0 1 2 -1\n"
+      },
+      {
+        "input": "2 1 2\n1 2\n",
+        "output": "1 0\n"
+      }
+    ],
+    "hidden_tests": [
+      {
+        "input": "1 0 1\n",
+        "output": "0\n"
+      }
+    ],
+    "bugs": [
+      "Neighbor distance must be parent distance plus one"
+    ],
+    "provenance": "original_exam_aligned",
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026"
+    ],
+    "is_actual_exam_question": false
+  },
+  {
+    "id": "DBG-004",
+    "title": "Grid Paths with Obstacles",
+    "topic": "2d_dp",
+    "language": "cpp17",
+    "statement": "Count paths from top-left to bottom-right moving only right/down through 0 cells; 1 means blocked. Return result mod 1e9+7.",
+    "starter_code": "#include <bits/stdc++.h>\nusing namespace std;\nint main(){int n,m;cin>>n>>m;vector<vector<int>>a(n,vector<int>(m));for(auto &r:a)for(int&x:r)cin>>x;const int M=1000000007;vector<vector<int>>d(n,vector<int>(m));d[0][0]=1;for(int i=0;i<n;i++)for(int j=0;j<m;j++){if(a[i][j])continue;if(i)d[i][j]=(d[i][j]+d[i-1][j])%M;if(j)d[i][j]=(d[i][j]+d[i][j-1])%M;}cout<<d[n-1][m-1]<<\"\\n\";}",
+    "reference_solution": "#include <bits/stdc++.h>\nusing namespace std;\nint main(){int n,m;cin>>n>>m;vector<vector<int>>a(n,vector<int>(m));for(auto &r:a)for(int&x:r)cin>>x;const int M=1000000007;vector<vector<int>>d(n,vector<int>(m));d[0][0]=!a[0][0];for(int i=0;i<n;i++)for(int j=0;j<m;j++){if(a[i][j])continue;if(i)d[i][j]=(d[i][j]+d[i-1][j])%M;if(j)d[i][j]=(d[i][j]+d[i][j-1])%M;}cout<<d[n-1][m-1]<<\"\\n\";}",
+    "public_tests": [
+      {
+        "input": "2 2\n0 0\n0 0\n",
+        "output": "2\n"
+      },
+      {
+        "input": "1 1\n1\n",
+        "output": "0\n"
+      }
+    ],
+    "hidden_tests": [
+      {
+        "input": "2 2\n1 0\n0 0\n",
+        "output": "0\n"
+      }
+    ],
+    "bugs": [
+      "Start cell must be zero ways when blocked"
+    ],
+    "provenance": "original_exam_aligned",
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026"
+    ],
+    "is_actual_exam_question": false
+  },
+  {
+    "id": "DBG-005",
+    "title": "Count Equal Pairs",
+    "topic": "hashing",
+    "language": "cpp17",
+    "statement": "Print number of pairs i<j with a[i]==a[j], n up to 200000.",
+    "starter_code": "#include <bits/stdc++.h>\nusing namespace std;\nint main(){int n;cin>>n;unordered_map<long long,int>f;int ans=0;while(n--){long long x;cin>>x;ans+=f[x];f[x]++;}cout<<ans<<\"\\n\";}",
+    "reference_solution": "#include <bits/stdc++.h>\nusing namespace std;\nint main(){int n;cin>>n;unordered_map<long long,long long>f;long long ans=0;while(n--){long long x;cin>>x;ans+=f[x];f[x]++;}cout<<ans<<\"\\n\";}",
+    "public_tests": [
+      {
+        "input": "5\n2 2 2 3 3\n",
+        "output": "4\n"
+      },
+      {
+        "input": "3\n1 2 3\n",
+        "output": "0\n"
+      }
+    ],
+    "hidden_tests": [
+      {
+        "input": "4\n7 7 7 7\n",
+        "output": "6\n"
+      }
+    ],
+    "bugs": [
+      "Pair count can exceed signed 32-bit range on large inputs"
+    ],
+    "provenance": "original_exam_aligned",
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026"
+    ],
+    "is_actual_exam_question": false
+  },
+  {
+    "id": "DBG-006",
+    "title": "Longest Common Subsequence",
+    "topic": "2d_dp",
+    "language": "cpp17",
+    "statement": "Given two strings, output length of their longest common subsequence.",
+    "starter_code": "#include <bits/stdc++.h>\nusing namespace std;\nint main(){string a,b;cin>>a>>b;int n=a.size(),m=b.size();vector<vector<int>>d(n+1,vector<int>(m+1));for(int i=1;i<=n;i++)for(int j=1;j<=m;j++){if(a[i-1]==b[j-1])d[i][j]=d[i-1][j-1]+1;else d[i][j]=min(d[i-1][j],d[i][j-1]);}cout<<d[n][m]<<\"\\n\";}",
+    "reference_solution": "#include <bits/stdc++.h>\nusing namespace std;\nint main(){string a,b;cin>>a>>b;int n=a.size(),m=b.size();vector<vector<int>>d(n+1,vector<int>(m+1));for(int i=1;i<=n;i++)for(int j=1;j<=m;j++){if(a[i-1]==b[j-1])d[i][j]=d[i-1][j-1]+1;else d[i][j]=max(d[i-1][j],d[i][j-1]);}cout<<d[n][m]<<\"\\n\";}",
+    "public_tests": [
+      {
+        "input": "abcde ace\n",
+        "output": "3\n"
+      },
+      {
+        "input": "abc xyz\n",
+        "output": "0\n"
+      }
+    ],
+    "hidden_tests": [
+      {
+        "input": "abc bac\n",
+        "output": "2\n"
+      }
+    ],
+    "bugs": [
+      "LCS recurrence on mismatch needs max rather than min"
+    ],
+    "provenance": "original_exam_aligned",
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026"
+    ],
+    "is_actual_exam_question": false
+  },
+  {
+    "id": "DBG-007",
+    "title": "Queue Processing",
+    "topic": "queue",
+    "language": "cpp17",
+    "statement": "Process integer sequence: enqueue positive x, dequeue for zero if nonempty; after all operations output remaining queue front-to-back or EMPTY.",
+    "starter_code": "#include <bits/stdc++.h>\nusing namespace std;\nint main(){int n;cin>>n;queue<int>q;while(n--){int x;cin>>x;if(x>0)q.push(x);else if(!q.empty())q.pop();}if(q.empty())cout<<\"EMPTY\\n\";else{while(!q.empty()){cout<<q.front()<<' ';q.pop();}cout<<\"\\n\";}}",
+    "reference_solution": "#include <bits/stdc++.h>\nusing namespace std;\nint main(){int n;cin>>n;queue<int>q;while(n--){int x;cin>>x;if(x>0)q.push(x);else if(x==0&&!q.empty())q.pop();}if(q.empty())cout<<\"EMPTY\\n\";else{bool first=true;while(!q.empty()){if(!first)cout<<' ';first=false;cout<<q.front();q.pop();}cout<<\"\\n\";}}",
+    "public_tests": [
+      {
+        "input": "5\n3 4 0 5 0\n",
+        "output": "5\n"
+      },
+      {
+        "input": "3\n0 0 0\n",
+        "output": "EMPTY\n"
+      }
+    ],
+    "hidden_tests": [
+      {
+        "input": "3\n2 -1 3\n",
+        "output": "2 3\n"
+      }
+    ],
+    "bugs": [
+      "Negative numbers should not cause dequeue; output formatting also normalized"
+    ],
+    "provenance": "original_exam_aligned",
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026"
+    ],
+    "is_actual_exam_question": false
+  },
+  {
+    "id": "DBG-008",
+    "title": "Shortest Subarray with Sum at Least K",
+    "topic": "sliding_window",
+    "language": "cpp17",
+    "statement": "For n positive integers, return minimum length of a contiguous subarray with sum >= k, or zero if none.",
+    "starter_code": "#include <bits/stdc++.h>\nusing namespace std;\nint main(){int n;long long k;cin>>n>>k;vector<int>a(n);for(int&x:a)cin>>x;int l=0,b=n+1;long long s=0;for(int r=0;r<n;r++){s+=a[r];while(s>k){b=min(b,r-l+1);s-=a[l++];}}cout<<(b==n+1?0:b)<<\"\\n\";}",
+    "reference_solution": "#include <bits/stdc++.h>\nusing namespace std;\nint main(){int n;long long k;cin>>n>>k;vector<int>a(n);for(int&x:a)cin>>x;int l=0,b=n+1;long long s=0;for(int r=0;r<n;r++){s+=a[r];while(s>=k){b=min(b,r-l+1);s-=a[l++];}}cout<<(b==n+1?0:b)<<\"\\n\";}",
+    "public_tests": [
+      {
+        "input": "5 7\n2 3 1 2 4\n",
+        "output": "3\n"
+      },
+      {
+        "input": "1 5\n5\n",
+        "output": "1\n"
+      }
+    ],
+    "hidden_tests": [
+      {
+        "input": "2 10\n2 3\n",
+        "output": "0\n"
+      }
+    ],
+    "bugs": [
+      "Boundary should include equal sum (>= instead of >)"
+    ],
+    "provenance": "original_exam_aligned",
+    "source_ids": [
+      "capgemini_ppt",
+      "candidate_oct2026"
+    ],
+    "is_actual_exam_question": false
+  }
+]

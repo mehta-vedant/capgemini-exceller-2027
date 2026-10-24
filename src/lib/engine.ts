@@ -1,0 +1,6 @@
+import type { Attempt, Question } from '../types';
+export const shuffle=<T,>(items:T[],random=Math.random):T[]=>{const result=[...items];for(let i=result.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[result[i],result[j]]=[result[j],result[i]];}return result;};
+export const scoreQuestions=(questions:Question[],answers:Record<string,number>)=>questions.reduce((score,q)=>score+(answers[q.id]===q.correctAnswer?1:0),0);
+export const accuracy=(attempts:Attempt[])=>attempts.length?Math.round(100*attempts.filter(a=>a.correct).length/attempts.length):0;
+export const pickMock=(questions:Question[],module:'ai'|'technical'|'combined',random=Math.random)=>{const selected=module==='combined'?[...shuffle(questions.filter(q=>q.module==='ai'),random).slice(0,20),...shuffle(questions.filter(q=>q.module==='technical'),random).slice(0,20)]:shuffle(questions.filter(q=>q.module===module),random).slice(0,20);return shuffle(selected,random);};
+export const promptRubric=(prompt:string)=>{const lower=prompt.toLowerCase();const checks={problem:/(problem|task|goal|implement)/.test(lower),io:/(input|output)/.test(lower),constraints:/(constraint|limit|edge case)/.test(lower),algorithm:/(approach|algorithm|complexity)/.test(lower),validation:/(test|validate|trace)/.test(lower)};return {checks,score:Object.values(checks).filter(Boolean).length*20};};

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "R01",
+    "date": "2026-10-05",
+    "title": "Firsthand 2027 40-MCQ and debugging/AI coding",
+    "url": "https://www.reddit.com/r/TechInterviewsIndia/comments/1wy3nr9/capgemini_exceller_2027_experience_with_ques/",
+    "evidence": "40 MCQ, RAG/SQL/index/ranking/query optimization; battery-pods two-ended queue debugging; frequency-of-3-category AI coding; 2000 tokens reported",
+    "type": "candidate_report"
+  },
+  {
+    "id": "R02",
+    "date": "2026-10-06",
+    "title": "Firsthand 2027 circular debugging",
+    "url": "https://www.reddit.com/r/Capgemini_india/comments/1wz0lih/capgemini_2027_assessment_experience_ai_technical/",
+    "evidence": "Long scenario MCQs, RAG/DBMS/SQL; circular clockwise movement with two bugs; language disagreement",
+    "type": "candidate_report"
+  },
+  {
+    "id": "R03",
+    "date": "2026-10-06",
+    "title": "Candidate MCQ style and RAG example",
+    "url": "https://www.reddit.com/r/Capgemini_india/comments/1wz138z/capgeminis_final_assessment_ai_literacy_technical/",
+    "evidence": "Scenario-based RAG with changing documents, close options, SQL joins/indexing and DSA",
+    "type": "candidate_report"
+  },
+  {
+    "id": "R04",
+    "date": "2026-10-08",
+    "title": "Firsthand AI testing and engineering scenario reports",
+    "url": "https://www.reddit.com/r/Capgemini_india/comments/1x0kf3i/capgemini_oncampus_oa_experience_2026/",
+    "evidence": "Selenium, TypeScript testing frameworks, cross-platform inconsistencies, technical SQL/DBMS/indexing; group-wise swap problem",
+    "type": "candidate_report"
+  },
+  {
+    "id": "R05",
+    "date": "2026-10-10",
+    "title": "Higher-package variant with HackerRank",
+    "url": "https://www.reddit.com/r/Capgemini_india/comments/1x2dn93/capgemini_exceller_2027_hackerrank_test_experience/",
+    "evidence": "Different track: matrix colouring DSA, prompt engineering, repository debugging music deletion, movie awards real-data feature",
+    "type": "candidate_report"
+  },
+  {
+    "id": "R06",
+    "date": "2026-09-28",
+    "title": "Communication first-hand",
+    "url": "https://www.reddit.com/r/TechInterviewsIndia/comments/1ws646k/capgemini_exceller_2027_communication_assessment/",
+    "evidence": "Grammar sentence improvement, speaking and writing",
+    "type": "candidate_report"
+  },
+  {
+    "id": "R07",
+    "date": "2026-09-28",
+    "title": "Communication round comment with reported tasks",
+    "url": "https://www.reddit.com/r/Capgemini_india/comments/1wp7h5d/capgemini_communication_assessment_has_anyone/",
+    "evidence": "Reading admissions passage; listening elective discussion; 90-120 sec speaking; polite roommate message; grammar",
+    "type": "candidate_report"
+  },
+  {
+    "id": "G01",
+    "date": "2026-10-10",
+    "title": "Glassdoor software engineer analyst recent review",
+    "url": "https://www.glassdoor.com/Interview/Capgemini-Interview-Questions-E3803.htm",
+    "evidence": "Candidate describes communication then approx 3-hour AI/CS MCQs, debugging, AI coding, cognitive, then interview",
+    "type": "candidate_report"
+  },
+  {
+    "id": "O01",
+    "date": "2026-10-11",
+    "title": "Official uploaded employer framework",
+    "url": "local:Capgemini+Exceller+Assessment+Framework+V2 (1).ppsx",
+    "evidence": "Five stages; 20 AI + 20 technical about 45m; one debugging about 20m; scaffolded AI-assisted coding; cognitive",
+    "type": "official"
+  }
+]

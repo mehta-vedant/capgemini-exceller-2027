@@ -1,0 +1,47 @@
+{
+  "name": "capgemini-exceller-practice",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k \"npm:dev:web\" \"npm:dev:api\"",
+    "dev:web": "vite",
+    "dev:api": "tsx watch server/index.ts",
+    "build": "tsc -b && vite build",
+    "start": "tsx server/index.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "runner:setup": "docker pull gcc:14 && docker pull eclipse-temurin:21-jdk",
+    "import:research": "tsx scripts/import-research-packs.ts",
+    "validate:data": "tsx scripts/validate-data.ts",
+    "validate:academy": "tsx scripts/validate-academy.ts",
+    "check": "npm run validate:data && npm run validate:academy && npm run test && npm run build"
+  },
+  "dependencies": {
+    "@google/genai": "^1.0.0",
+    "@monaco-editor/react": "^4.7.0",
+    "cors": "^2.8.5",
+    "dexie": "^4.0.11",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.2",
+    "zod": "^3.24.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.54.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/node": "^22.15.30",
+    "@types/react": "^19.1.6",
+    "@types/react-dom": "^19.1.5",
+    "@vitejs/plugin-react": "^4.5.2",
+    "concurrently": "^9.1.2",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5",
+    "vitest": "^3.2.2"
+  }
+}

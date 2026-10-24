@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# Production build output
+dist/
+
+# Local Environment
+.env
+.env.local
+.env.*.local
+
+# Playwright & Testing
+playwright-report/
+test-results/
+.playwright-mcp/
+.openai/
+
+# Large Archives & Binaries
+*.tar
+*.zip
+*.ppsx
+*.docx
+
+# Screenshots & Visual Testing Artifacts
+*.png
+*.jpg
+*.jpeg
+
+# OS Metadata
+.DS_Store
+Thumbs.db

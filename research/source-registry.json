@@ -1,0 +1,32 @@
+{
+  "sources": [
+    {
+      "id": "OFF-001",
+      "title": "Capgemini Exceller Assessment Framework V2",
+      "type": "provided-presentation",
+      "label": "OFFICIAL",
+      "usedFor": ["assessment stages", "timing", "topic headings", "format boundaries"]
+    },
+    {
+      "id": "UPSTREAM-001",
+      "title": "santhoshkumaroff/Capgemini-2027",
+      "type": "upstream-study-material",
+      "label": "GENERAL_PRACTICE",
+      "usedFor": ["practice-topic inspiration", "instruction conversion"]
+    },
+    {
+      "id": "RESEARCH-PACK-2026",
+      "title": "Capgemini Exceller 2027 Research Question Bank",
+      "type": "user-provided-research-pack",
+      "label": "RECONSTRUCTED",
+      "usedFor": ["104 scenario MCQs", "20 reasoning and communication drills", "8 debugging tasks", "12 AI coding tasks"]
+    },
+    {
+      "id": "INDEPENDENT-RESEARCH-2026",
+      "title": "Independent Reddit and Glassdoor Research Bank",
+      "type": "user-provided-research-pack",
+      "label": "CANDIDATE_REPORTED",
+      "usedFor": ["88 scenario MCQs", "6 reconstructed debugging tasks", "8 AI coding tasks"]
+    }
+  ]
+}

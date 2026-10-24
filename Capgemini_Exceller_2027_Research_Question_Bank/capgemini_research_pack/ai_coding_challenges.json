@@ -1,0 +1,302 @@
+[
+  {
+    "id": "AIC-001",
+    "title": "First non-repeating character",
+    "topic": "hashing",
+    "problem": "Return first unique character in an input string, or -1.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "scaffold": [
+      "Restate the problem and specify input/output and constraints",
+      "Propose data structures and algorithm with target complexity",
+      "Specify boundary cases and examples",
+      "Give the assistant precise code-generation instructions in C++17",
+      "Review generated code for errors and propose tests",
+      "Fix defects and explain complexity"
+    ],
+    "rubric": {
+      "problem_understanding": 20,
+      "algorithm_and_complexity": 25,
+      "prompt_clarity": 20,
+      "edge_cases": 15,
+      "code_review_and_validation": 20
+    },
+    "recommended_budget_tokens": 2000,
+    "code_generation_requires_configured_ai": true
+  },
+  {
+    "id": "AIC-002",
+    "title": "Merge overlapping intervals",
+    "topic": "sorting",
+    "problem": "Merge inclusive overlapping integer intervals after sorting.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "scaffold": [
+      "Restate the problem and specify input/output and constraints",
+      "Propose data structures and algorithm with target complexity",
+      "Specify boundary cases and examples",
+      "Give the assistant precise code-generation instructions in C++17",
+      "Review generated code for errors and propose tests",
+      "Fix defects and explain complexity"
+    ],
+    "rubric": {
+      "problem_understanding": 20,
+      "algorithm_and_complexity": 25,
+      "prompt_clarity": 20,
+      "edge_cases": 15,
+      "code_review_and_validation": 20
+    },
+    "recommended_budget_tokens": 2000,
+    "code_generation_requires_configured_ai": true
+  },
+  {
+    "id": "AIC-003",
+    "title": "Minimum meeting rooms",
+    "topic": "heap",
+    "problem": "Given meeting start/end times, compute minimum concurrent rooms.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "scaffold": [
+      "Restate the problem and specify input/output and constraints",
+      "Propose data structures and algorithm with target complexity",
+      "Specify boundary cases and examples",
+      "Give the assistant precise code-generation instructions in C++17",
+      "Review generated code for errors and propose tests",
+      "Fix defects and explain complexity"
+    ],
+    "rubric": {
+      "problem_understanding": 20,
+      "algorithm_and_complexity": 25,
+      "prompt_clarity": 20,
+      "edge_cases": 15,
+      "code_review_and_validation": 20
+    },
+    "recommended_budget_tokens": 2000,
+    "code_generation_requires_configured_ai": true
+  },
+  {
+    "id": "AIC-004",
+    "title": "Count palindromic substrings",
+    "topic": "two_pointers",
+    "problem": "Count all palindromic substrings efficiently using center expansion.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "scaffold": [
+      "Restate the problem and specify input/output and constraints",
+      "Propose data structures and algorithm with target complexity",
+      "Specify boundary cases and examples",
+      "Give the assistant precise code-generation instructions in C++17",
+      "Review generated code for errors and propose tests",
+      "Fix defects and explain complexity"
+    ],
+    "rubric": {
+      "problem_understanding": 20,
+      "algorithm_and_complexity": 25,
+      "prompt_clarity": 20,
+      "edge_cases": 15,
+      "code_review_and_validation": 20
+    },
+    "recommended_budget_tokens": 2000,
+    "code_generation_requires_configured_ai": true
+  },
+  {
+    "id": "AIC-005",
+    "title": "Grid islands",
+    "topic": "graphs",
+    "problem": "Count 4-connected components of 1s in a binary grid.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "scaffold": [
+      "Restate the problem and specify input/output and constraints",
+      "Propose data structures and algorithm with target complexity",
+      "Specify boundary cases and examples",
+      "Give the assistant precise code-generation instructions in C++17",
+      "Review generated code for errors and propose tests",
+      "Fix defects and explain complexity"
+    ],
+    "rubric": {
+      "problem_understanding": 20,
+      "algorithm_and_complexity": 25,
+      "prompt_clarity": 20,
+      "edge_cases": 15,
+      "code_review_and_validation": 20
+    },
+    "recommended_budget_tokens": 2000,
+    "code_generation_requires_configured_ai": true
+  },
+  {
+    "id": "AIC-006",
+    "title": "Longest increasing subsequence",
+    "topic": "binary_search",
+    "problem": "Compute LIS length in O(n log n).",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "scaffold": [
+      "Restate the problem and specify input/output and constraints",
+      "Propose data structures and algorithm with target complexity",
+      "Specify boundary cases and examples",
+      "Give the assistant precise code-generation instructions in C++17",
+      "Review generated code for errors and propose tests",
+      "Fix defects and explain complexity"
+    ],
+    "rubric": {
+      "problem_understanding": 20,
+      "algorithm_and_complexity": 25,
+      "prompt_clarity": 20,
+      "edge_cases": 15,
+      "code_review_and_validation": 20
+    },
+    "recommended_budget_tokens": 2000,
+    "code_generation_requires_configured_ai": true
+  },
+  {
+    "id": "AIC-007",
+    "title": "Top K frequent elements",
+    "topic": "hashing",
+    "problem": "Return any k most frequent distinct numbers with documented tie handling.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "scaffold": [
+      "Restate the problem and specify input/output and constraints",
+      "Propose data structures and algorithm with target complexity",
+      "Specify boundary cases and examples",
+      "Give the assistant precise code-generation instructions in C++17",
+      "Review generated code for errors and propose tests",
+      "Fix defects and explain complexity"
+    ],
+    "rubric": {
+      "problem_understanding": 20,
+      "algorithm_and_complexity": 25,
+      "prompt_clarity": 20,
+      "edge_cases": 15,
+      "code_review_and_validation": 20
+    },
+    "recommended_budget_tokens": 2000,
+    "code_generation_requires_configured_ai": true
+  },
+  {
+    "id": "AIC-008",
+    "title": "Shortest path in unweighted maze",
+    "topic": "graphs",
+    "problem": "Return BFS distance from S to T through walkable cells.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "scaffold": [
+      "Restate the problem and specify input/output and constraints",
+      "Propose data structures and algorithm with target complexity",
+      "Specify boundary cases and examples",
+      "Give the assistant precise code-generation instructions in C++17",
+      "Review generated code for errors and propose tests",
+      "Fix defects and explain complexity"
+    ],
+    "rubric": {
+      "problem_understanding": 20,
+      "algorithm_and_complexity": 25,
+      "prompt_clarity": 20,
+      "edge_cases": 15,
+      "code_review_and_validation": 20
+    },
+    "recommended_budget_tokens": 2000,
+    "code_generation_requires_configured_ai": true
+  },
+  {
+    "id": "AIC-009",
+    "title": "Decode ways",
+    "topic": "dynamic_programming",
+    "problem": "Count valid mappings of digits to A-Z, including leading-zero cases.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "scaffold": [
+      "Restate the problem and specify input/output and constraints",
+      "Propose data structures and algorithm with target complexity",
+      "Specify boundary cases and examples",
+      "Give the assistant precise code-generation instructions in C++17",
+      "Review generated code for errors and propose tests",
+      "Fix defects and explain complexity"
+    ],
+    "rubric": {
+      "problem_understanding": 20,
+      "algorithm_and_complexity": 25,
+      "prompt_clarity": 20,
+      "edge_cases": 15,
+      "code_review_and_validation": 20
+    },
+    "recommended_budget_tokens": 2000,
+    "code_generation_requires_configured_ai": true
+  },
+  {
+    "id": "AIC-010",
+    "title": "Circular movement cost",
+    "topic": "math",
+    "problem": "Compute clockwise step count visiting targets in a numbered circle.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "scaffold": [
+      "Restate the problem and specify input/output and constraints",
+      "Propose data structures and algorithm with target complexity",
+      "Specify boundary cases and examples",
+      "Give the assistant precise code-generation instructions in C++17",
+      "Review generated code for errors and propose tests",
+      "Fix defects and explain complexity"
+    ],
+    "rubric": {
+      "problem_understanding": 20,
+      "algorithm_and_complexity": 25,
+      "prompt_clarity": 20,
+      "edge_cases": 15,
+      "code_review_and_validation": 20
+    },
+    "recommended_budget_tokens": 2000,
+    "code_generation_requires_configured_ai": true
+  },
+  {
+    "id": "AIC-011",
+    "title": "Two sum with duplicates",
+    "topic": "hashing",
+    "problem": "Return indices of a valid pair summing to target, never reuse a position.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "scaffold": [
+      "Restate the problem and specify input/output and constraints",
+      "Propose data structures and algorithm with target complexity",
+      "Specify boundary cases and examples",
+      "Give the assistant precise code-generation instructions in C++17",
+      "Review generated code for errors and propose tests",
+      "Fix defects and explain complexity"
+    ],
+    "rubric": {
+      "problem_understanding": 20,
+      "algorithm_and_complexity": 25,
+      "prompt_clarity": 20,
+      "edge_cases": 15,
+      "code_review_and_validation": 20
+    },
+    "recommended_budget_tokens": 2000,
+    "code_generation_requires_configured_ai": true
+  },
+  {
+    "id": "AIC-012",
+    "title": "Validate BST",
+    "topic": "trees",
+    "problem": "Check strict BST rules across all descendants using bounds.",
+    "provenance": "original_exam_aligned",
+    "is_actual_exam_question": false,
+    "scaffold": [
+      "Restate the problem and specify input/output and constraints",
+      "Propose data structures and algorithm with target complexity",
+      "Specify boundary cases and examples",
+      "Give the assistant precise code-generation instructions in C++17",
+      "Review generated code for errors and propose tests",
+      "Fix defects and explain complexity"
+    ],
+    "rubric": {
+      "problem_understanding": 20,
+      "algorithm_and_complexity": 25,
+      "prompt_clarity": 20,
+      "edge_cases": 15,
+      "code_review_and_validation": 20
+    },
+    "recommended_budget_tokens": 2000,
+    "code_generation_requires_configured_ai": true
+  }
+]
